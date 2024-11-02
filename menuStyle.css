@@ -1,0 +1,3081 @@
+.MainBg{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+
+    /*animation-name: backgroundAnimation;
+    animation-duration: 4s;*/
+}
+
+.mainlogopic1{
+    position: absolute;
+    top: 20px;
+    left: 6%;
+}
+.green{
+    position: absolute;
+    width: 1244px;
+    opacity: 0.2;
+}
+/* Header */
+
+.header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    box-shadow: rgba(111, 255, 159, .1) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    opacity: 0.8;
+}
+
+.mainLogoClass{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
+
+
+/* Nav */
+.navContainer{
+    position: absolute;
+    top: -50px;
+    left: -500px;
+    height: 200px;
+    width: 100%;
+
+    animation-name: navAnimation;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes navAnimation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }   
+}
+
+@keyframes navAnimation2 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+       
+    }   
+}
+nav{
+    display: flex;
+    position: relative;
+    gap: 150px;
+}
+nav a{
+    position: relative;
+    top: 80px;
+    left: 70%;
+    font-family: 'CustomFont';
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #493628;
+    text-decoration: none;
+    font-weight: normal;
+    transition: 350ms ease-in-out;
+  
+}
+
+.navigator1 a:hover{
+    transform: scale(1.2);
+}
+
+.nav1::after{
+    content: '01';
+    position: absolute;
+    color: #285430;
+    font-size: 11px;
+    top: -5px;
+    left: -15px;
+    width: 10px;
+    height: 10px;
+}
+
+.nav2::after{
+    content: '02';
+    position: absolute;
+    color: #285430;
+    font-size: 11px;
+    top: -5px;
+    left: -15px;
+    width: 10px;
+    height: 10px;
+ 
+ }
+
+ .nav3::after{
+    content: '03';
+    position: absolute;
+    color: #285430;
+    font-size: 11px;
+    top: -5px;
+    left: -15px;
+    width: 10px;
+    height: 10px;
+ 
+ }
+
+ .nav4::after{
+    content: '04';
+    position: absolute;
+    color: #285430;
+    font-size: 11px;
+    top: -5px;
+    left: -15px;
+    width: 10px;
+    height: 10px;
+ 
+ }
+
+.loginBttn{
+    position: absolute;
+    left: 2220px;
+    top: 73px;
+    color: white;
+    font-family: 'CustomFont';
+    width: 60px;
+    font-size: 12px;
+    z-index: 1;
+    letter-spacing: 1px;
+    transition: 350ms ease-in-out;
+    
+}
+
+.loginBttn::before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -17px;
+    width: 80px;
+    height: 35px;
+    background-color: #285430;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.loginBttn:hover{
+    transform: scale(1.1);
+}
+ 
+
+.header2{
+    position: absolute;
+    top: 120px;
+    left: 8%;
+    background-color: white;
+    width: 1600px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.navi2 .navi{
+    position: absolute;
+    top: 15px;
+    left: 105px;
+
+    display: flex;
+    position: relative;
+    gap: 2250px;
+    width:1000px;
+    font-size: 15px;
+}
+
+.navi1::after{
+    content: 'COMING SOON';
+    position: absolute;
+    top: -7px;
+    left: 0px;
+    color: #285430;
+    font-family: 'CustomFont';
+    font-size: 6px;
+
+}
+
+.navi3::after{
+    content: 'COMING SOON';
+    position: absolute;
+    top: -7px;
+    left: 0px;
+    color: #285430;
+    font-family: 'CustomFont';
+    font-size: 6px;
+
+}
+
+.navi4::after{
+    content: 'COMING SOON';
+    position: absolute;
+    top: -7px;
+    left: 0px;
+    color: #285430;
+    font-family: 'CustomFont';
+    font-size: 6px;
+
+}
+
+
+.mainmenu{
+    position: absolute;
+    top: 190px;
+    left: 8%;
+    width: 1600px;
+    height: 700px;
+    background-color: white;
+    border-radius: 5px;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+
+
+.productContainer{
+    position: absolute;
+    max-height: 80%;
+    margin: 0 auto;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    overflow: hidden;
+
+    left: 35%;
+    top: 80px;
+}
+
+.products{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    width: 40%;
+
+    top: 200px;
+
+    animation-name: productsAni1;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    
+}
+@keyframes productsAni1 {
+       from{
+            opacity: 0;
+       }
+       to{
+            opacity: 1;
+       }
+}
+.products img{
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    width: 100%;
+
+    filter: drop-shadow(0px -10px 20px rgba(0, 0, 0, 0.1)) ;
+}
+
+.slider-nav{
+    max-height: 50%;
+    width: 15%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+
+    top: 200px;
+    left: 75%;
+    z-index: 1;
+    
+}
+
+.productSelector3{
+    position: relative;
+    left: -5px;
+}
+
+
+.productSelector1txt{
+    position: absolute;
+    top: 5px;
+    left: 60px;
+    font-size: 14px;
+    font-family: 'LightFont';
+    color: black;
+    text-decoration: none;
+}
+
+.productSelector1price{
+    position: absolute;
+    top: 17px;
+    left: 100px;
+    font-size: 18px;
+    font-family: 'CustomFont';
+    color: black;
+    text-decoration: none;
+}
+
+.productSelector1disc{
+    position: absolute;
+    top: 25px;
+    left: 70px;
+    font-size: 11px;
+    font-family: 'CustomFont';
+    color: #285430;
+    text-decoration: line-through;
+}
+
+
+
+.productSelector2txt{
+    position: absolute;
+    top: 85px;
+    left: 60px;
+    font-size: 14px;
+    font-family: 'LightFont';
+    color: black;
+    text-decoration: none;
+}
+
+.productSelector2price{
+    position: absolute;
+    top: 97px;
+    left: 100px;
+    font-size: 18px;
+    font-family: 'CustomFont';
+    color: black;
+    text-decoration: none;
+}
+
+.productSelector2disc{
+    position: absolute;
+    top: 105px;
+    left: 70px;
+    font-size: 11px;
+    font-family: 'CustomFont';
+    color: #285430;
+    text-decoration: line-through;
+}
+
+
+
+.productSelector3txt{
+    position: absolute;
+    top:165px;
+    left: 60px;
+    font-size: 14px;
+    font-family: 'LightFont';
+    color: black;
+    text-decoration: none;
+}
+
+.productSelector3price{
+    position: absolute;
+    top: 178px;
+    left: 100px;
+    font-size: 18px;
+    font-family: 'CustomFont';
+    color: black;
+    text-decoration: none;
+}
+
+.productSelector3disc{
+    position: absolute;
+    top: 185px;
+    left: 70px;
+    font-size: 11px;
+    font-family: 'CustomFont';
+    color: #285430;
+    text-decoration: line-through;
+}
+
+
+.productSelector4txt{
+    position: absolute;
+    top:255px;
+    left: 60px;
+    font-size: 14px;
+    font-family: 'LightFont';
+    color: black;
+    text-decoration: none;
+}
+
+.productSelector4price{
+    position: absolute;
+    top: 270px;
+    left: 100px;
+    font-size: 18px;
+    font-family: 'CustomFont';
+    color: black;
+    text-decoration: none;
+}
+
+.productSelector4disc{
+    position: absolute;
+    top: 275px;
+    left: 70px;
+    font-size: 11px;
+    font-family: 'CustomFont';
+    color: #285430;
+    text-decoration: line-through;
+}
+
+
+.productSelector5txt{
+    position: absolute;
+    top:335px;
+    left: 60px;
+    font-size: 14px;
+    font-family: 'LightFont';
+    color: black;
+    text-decoration: none;
+}
+
+.productSelector5price{
+    position: absolute;
+    top: 350px;
+    left: 100px;
+    font-size: 18px;
+    font-family: 'CustomFont';
+    color: black;
+    text-decoration: none;
+}
+
+.productSelector5disc{
+    position: absolute;
+    top: 355px;
+    left: 70px;
+    font-size: 11px;
+    font-family: 'CustomFont';
+    color: #285430;
+    text-decoration: line-through;
+}
+
+
+.productSelector6txt{
+    position: absolute;
+    top: 415px;
+    left: 60px;
+    font-size: 14px;
+    font-family: 'LightFont';
+    color: black;
+    text-decoration: none;
+}
+
+.productSelector6price{
+    position: absolute;
+    top: 430px;
+    left: 100px;
+    font-size: 18px;
+    font-family: 'CustomFont';
+    color:black;
+    text-decoration: none;
+}
+
+.productSelector6disc{
+    position: absolute;
+    top: 435px;
+    left: 70px;
+    font-size: 11px;
+    font-family: 'CustomFont';
+    color: #285430;
+    text-decoration: line-through;
+}
+
+
+
+.menutxt1{
+    position: absolute;
+    top: 125px;
+    left: 75%;
+    font-family: 'CustomFont';
+    color: black;
+    font-size: 25px;
+}
+
+.prodDesc1{
+    position: absolute;
+    top: -50px;
+    font-family: 'CustomFont';
+    font-size: 80px;
+    color: black;
+    line-height: 65px;
+
+}
+
+
+.sampletxt1{
+    position: absolute;
+    top: 40px;
+    left: 0%;
+    font-family: 'CustomFont';
+    font-size: 90px;
+
+    opacity: 0;
+    line-height: 70px;
+
+    transition: 300ms ease;
+}
+
+.sampletxt1.active1{
+    position: absolute;
+    left: 8%;
+    opacity: 1;
+}
+
+
+
+.sampletxt2{
+    position: absolute;
+    top: 40px;
+    left: 0%;
+    font-family: 'CustomFont';
+    font-size: 90px;
+
+    opacity: 0;
+    line-height: 70px;
+
+    transition: 300ms ease;
+}
+
+.sampletxt2.active2{
+    position: absolute;
+    left: 6%;
+    opacity: 1;
+}
+
+
+.sampletxt3{
+    position: absolute;
+    top: 40px;
+    left: 0%;
+    font-family: 'CustomFont';
+    font-size: 90px;
+
+    opacity: 0;
+    line-height: 70px;
+
+    transition: 300ms ease;
+}
+
+.sampletxt3.active3{
+    position: absolute;
+    left: 6%;
+    opacity: 1;
+}
+
+
+.sampletxt4{
+    position: absolute;
+    top: 40px;
+    left: 0%;
+    font-family: 'CustomFont';
+    font-size: 90px;
+
+    opacity: 0;
+    line-height: 70px;
+
+    transition: 300ms ease;
+}
+
+.sampletxt4.active4{
+    position: absolute;
+    left: 6%;
+    opacity: 1;
+}
+
+
+
+
+.sampletxt5{
+    position: absolute;
+    top: 40px;
+    left: 0%;
+    font-family: 'CustomFont';
+    font-size: 90px;
+
+    opacity: 0;
+    line-height: 70px;
+
+    transition: 300ms ease;
+}
+
+.sampletxt5.active5{
+    position: absolute;
+    left: 6%;
+    opacity: 1;
+}
+
+
+
+.sampletxt6{
+    position: absolute;
+    top: 40px;
+    left: 0%;
+    font-family: 'CustomFont';
+    font-size: 90px;
+
+    opacity: 0;
+    line-height: 70px;
+
+    transition: 300ms ease;
+}
+
+.sampletxt6.active6{
+    position: absolute;
+    left: 6%;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Product 1 Properties */
+.sampletxt1addtxt1{
+    position: absolute;
+    left: 5px;
+    font-size: 15px;
+    top: 250px;
+}
+.ingre1{
+    font-family: 'LightFont';
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.buyProd1{
+    position: absolute;
+    top: 530px;
+    left: 0px;
+    width:130px;
+    height: 40px;
+    background-color: #285430;
+    opacity: 1;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+.cartpic1{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.cart1{
+    position: absolute;
+    top: -7px;
+    left: 50px;
+    font-family: 'CustomFont';
+    font-size: 15px;
+    color: white;
+}
+
+.prod1addtxt1{
+    position: absolute;
+    top: 410px ;
+    left: 5px;
+    font-family: 'LightFont';
+    font-size: 15px;
+    color: #285430;
+    text-decoration: line-through;
+}
+
+.prod1addtxt2{
+    position: absolute;
+    top: 410px ;
+    left: 40px;
+    font-family: 'CustomFont';
+    font-size: 40px;
+    
+}
+
+.prod1addtxt3{
+    position: absolute;
+    top: 230px ;
+    left: 5px;
+    width: 300px;
+    font-family: 'LightFont';
+    font-size: 11px;
+    line-height: 10px;
+    letter-spacing: 0.3px;
+}
+
+.GreenProd1{
+    position: absolute;
+    top: -130px;
+    left: 125px;
+    width: 250px;
+    height: 590px;
+    background-color: #285430;
+    clip: rect(130px 900px 900px 0px);
+
+    border-radius: 130px;
+}
+
+.GreenProd1pic{
+    position: absolute;
+    top: 80%;
+    left: 85%;
+}
+.prodOut1{
+    position: absolute;
+    top: 2%;
+    left: 55%;
+    width: 1000px;
+    height: 600px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    
+    box-shadow: rgba(25, 25, 93, 0.25) 0px 25px 50px -20px, rgba(0, 0, 0, 0.3) 0px 30px 30px -30px;
+    z-index: 2;
+
+    opacity: 0;
+    transform: scale(0);
+
+    transition: 400ms ease;
+
+}
+
+.prodOut1.active1{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.prodOut1.inactive1{
+    opacity: 0;
+    transform: scale(0);
+}
+
+
+.prod1Outadd1{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 300px;
+
+
+    filter: drop-shadow(0px -10px 20px rgba(0, 0, 0, 0.2)) ;
+   
+}
+
+
+.prod1Outadd2{
+
+    font-family: 'CustomFont';
+    font-weight: bold;
+    font-size: 15px;
+    position: absolute;
+    top: 13%;
+    left: 43%;
+    width: 300px;
+
+   
+}
+
+.prod1Outadd3{
+
+    font-family: 'CustomFont';
+    font-size: 50px;
+    position: absolute;
+    top: 15%;
+    left: 43%;
+    width: 300px;
+
+   
+}
+
+.prod1Outadd4{
+
+    font-family: 'CustomFont';
+    font-size: 30px;
+    position: absolute;
+    top: 25%;
+    left: 47%;
+    color: #285430;
+}
+
+.prod1Outadd5{
+
+    font-family: 'LightFont';
+    font-size: 13px;
+    position: absolute;
+    top: 27%;
+    left: 43%;
+    width: 300px;
+
+   
+}
+
+.prod1Outadd6{
+
+    font-family: 'LightFont';
+    font-size: 13px;
+    position: absolute;
+    top: 34%;
+    left: 43%;
+    width: 300px;
+
+   
+}
+
+.prod1Outadd7{
+    position: absolute;
+    width: 30px;
+    top: 37%;
+    left: 48.4%;
+    
+    border: none;
+
+}
+
+
+.prod1Outadd8{
+    font-family: 'CustomFont';
+    font-size: 12px;
+    position: absolute;
+    top: 40%;
+    left: 43%;
+
+}
+
+.prod1Outadd9{
+    font-family: 'LightFont';
+    font-size: 10px;
+    position: absolute;
+    top: 45%;
+    left: 43%;
+    letter-spacing: 0.2px;
+
+}
+
+
+.prod1Outadd10{
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    top: 50%;
+    left: 43%;
+
+    border: none;
+
+}
+
+
+.prod1Outadd11{
+    font-family: 'LightFont';
+    font-size: 10px;
+    position: absolute;
+    top: 45%;
+    left: 57%;
+    letter-spacing: 0.2px;
+
+}
+
+
+.prod1Outadd12{
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    top: 50%;
+    left: 57%;
+
+    border: none;
+
+}
+
+.prod1Outadd13{
+    position: absolute;
+    width: 160px;
+    top: 62%;
+    left: 43%;
+    font-size: 10px;
+
+}
+
+.prod1Outadd14{
+    position: absolute;
+    width: 90px;
+    height: 27px;
+    top: 68%;
+    left: 43%;
+
+    border: none;
+
+}
+
+.prod1Outadd15{
+    position: absolute;
+    width: 110px;
+    height: 30px;
+    top: 68%;
+    left: 58%;
+    font-family: 'CustomFont';
+    color: white;
+    background-color: #285430;
+    border: none;
+    border-radius: 5px;
+
+}
+
+
+.prod1Exit{
+    position: absolute;
+    top: 5%;
+    left: 93%;
+    background-color: #F3F3F3;
+    border: none;
+}
+
+.prod1Outadd16{
+
+    font-family: 'LightFont';
+    font-size: 13px;
+    position: absolute;
+    top: 53%;
+    left: 43%;
+    width: 300px;
+
+   
+}
+
+.prod1Outadd17{
+
+    font-family: 'CustomFont';
+    font-size: 27px;
+    position: absolute;
+    top: 52%;
+    left:46%;
+    width: 300px;
+
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Product 2 Properties */
+.checkoutBg{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1100px;
+    opacity: 0;
+    clip: rect(0px 1000px 600px 0px);
+}
+
+.GreenProd2{
+    position: absolute;
+    top: -130px;
+    left: 125px;
+    width: 250px;
+    height: 590px;
+    background-color: #285430;
+    clip: rect(130px 900px 900px 0px);
+
+    border-radius: 130px;
+}
+
+.GreenProd2pic{
+    position: absolute;
+    top: 80%;
+    left: 85%;
+}
+.sampletxt2addtxt1{
+    position: absolute;
+    left: 10px;
+    font-size: 15px;
+    top: 250px;
+}
+
+.prod2maintxt{
+    position: absolute;
+    top: 30px;
+    left: 7px;
+}
+.ingre2{
+    position: relative;
+    top: 320px;
+    left: 7px;
+    font-family: 'LightFont';
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.buyProd2{
+    position: absolute;
+    top: 210px;
+    left: 10px;
+    width:130px;
+    height: 40px;
+    background-color: #285430;
+    opacity: 1;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+.cartpic2{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.cart2{
+    position: absolute;
+    top: -7px;
+    left: 50px;
+    font-family: 'CustomFont';
+    font-size: 15px;
+    color: white;
+}
+
+.prod2addtxt1{
+    position: absolute;
+    top: 90px ;
+    left: 5px;
+    font-family: 'LightFont';
+    font-size: 15px;
+    color: #285430;
+    text-decoration: line-through;
+}
+
+.prod2addtxt2{
+    position: absolute;
+    top: 90px ;
+    left: 40px;
+    font-family: 'CustomFont';
+    font-size: 40px;
+    
+}
+
+.prod2addtxt3{
+    position: absolute;
+    top: 200px ;
+    left: 10px;
+    width: 300px;
+    font-family: 'LightFont';
+    font-size: 11px;
+    line-height: 10px;
+    letter-spacing: 0.3px;
+}
+
+
+.prodOut2{
+    position: absolute;
+    top: -400%;
+    left: 55%;
+    width: 1000px;
+    height: 600px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    overflow: hidden;
+    
+    box-shadow: rgba(25, 25, 93, 0.25) 0px 25px 50px -20px, rgba(0, 0, 0, 0.3) 0px 30px 30px -30px;
+    z-index: 2;
+
+    opacity: 0;
+    transform: scale(0);
+
+    transition: 400ms ease;
+
+}
+
+.prodOut2.active2{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.prodOut2.inactive2{
+    opacity: 0;
+    transform: scale(0);
+}
+
+
+.prod2Outadd1{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 300px;
+
+
+    filter: drop-shadow(0px -10px 20px rgba(0, 0, 0, 0.2)) ;
+   
+}
+
+
+.prod2Outadd2{
+
+    font-family: 'CustomFont';
+    font-weight: bold;
+    font-size: 15px;
+    position: absolute;
+    top: 13%;
+    left: 43%;
+    width: 300px;
+
+   
+}
+
+.prod2Outadd3{
+
+    font-family: 'CustomFont';
+    font-size: 50px;
+    position: absolute;
+    top: 15%;
+    left: 43%;
+    width: 300px;
+
+   
+}
+
+.prod2Outadd4{
+
+    font-family: 'CustomFont';
+    font-size: 30px;
+    position: absolute;
+    top: 25%;
+    left: 47%;
+    color: #285430;
+}
+
+.prod2Outadd5{
+
+    font-family: 'LightFont';
+    font-size: 13px;
+    position: absolute;
+    top: 27%;
+    left: 43%;
+    width: 300px;
+
+   
+}
+
+.prod2Outadd6{
+
+    font-family: 'LightFont';
+    font-size: 13px;
+    position: absolute;
+    top: 34%;
+    left: 43%;
+    width: 300px;
+
+   
+}
+
+.prod2Outadd7{
+    position: absolute;
+    width: 30px;
+    top: 37%;
+    left: 48.4%;
+    
+    border: none;
+
+}
+
+
+.prod2Outadd8{
+    font-family: 'CustomFont';
+    font-size: 12px;
+    position: absolute;
+    top: 40%;
+    left: 43%;
+
+}
+
+.prod2Outadd9{
+    font-family: 'LightFont';
+    font-size: 10px;
+    position: absolute;
+    top: 45%;
+    left: 43%;
+    letter-spacing: 0.2px;
+
+}
+
+
+.prod2Outadd10{
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    top: 50%;
+    left: 43%;
+
+    border: none;
+
+}
+
+
+.prod2Outadd11{
+    font-family: 'LightFont';
+    font-size: 10px;
+    position: absolute;
+    top: 45%;
+    left: 57%;
+    letter-spacing: 0.2px;
+
+}
+
+
+.prod2Outadd12{
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    top: 50%;
+    left: 57%;
+
+    border: none;
+
+}
+
+.prod2Outadd13{
+    position: absolute;
+    width: 160px;
+    top: 62%;
+    left: 43%;
+    font-size: 10px;
+
+}
+
+.prod2Outadd14{
+    position: absolute;
+    width: 90px;
+    height: 27px;
+    top: 68%;
+    left: 43%;
+
+    border: none;
+
+}
+
+.prod2Outadd15{
+    position: absolute;
+    width: 110px;
+    height: 30px;
+    top: 68%;
+    left: 58%;
+    font-family: 'CustomFont';
+    color: white;
+    background-color: #285430;
+    border: none;
+    border-radius: 5px;
+
+}
+
+
+.prod2Exit{
+    position: absolute;
+    top: 5%;
+    left: 93%;
+    background-color: #F3F3F3;
+    border: none;
+}
+
+.prod2Outadd16{
+
+    font-family: 'LightFont';
+    font-size: 13px;
+    position: absolute;
+    top: 53%;
+    left: 43%;
+    width: 300px;
+
+   
+}
+
+.prod2Outadd17{
+
+    font-family: 'CustomFont';
+    font-size: 27px;
+    position: absolute;
+    top: 52%;
+    left:46%;
+    width: 300px;
+
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Product 3 Properties */
+.checkoutBg{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1100px;
+    opacity: 0;
+    clip: rect(0px 1000px 600px 0px);
+}
+
+.GreenProd3{
+    position: absolute;
+    top: -130px;
+    left: 125px;
+    width: 250px;
+    height: 590px;
+    background-color: #285430;
+    clip: rect(130px 900px 900px 0px);
+
+    border-radius: 130px;
+}
+
+.GreenProd3pic{
+    position: absolute;
+    top: 80%;
+    left: 85%;
+}
+.sampletxt3addtxt1{
+    position: absolute;
+    left: 10px;
+    font-size: 15px;
+    top: 250px;
+}
+
+.prod3maintxt{
+    position: absolute;
+    top: 0px;
+    left: 7px;
+}
+.ingre3{
+    position: relative;
+    top: 320px;
+    left: 7px;
+    font-family: 'LightFont';
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.buyProd3{
+    position: absolute;
+    top: 210px;
+    left: 10px;
+    width:130px;
+    height: 40px;
+    background-color: #285430;
+    opacity: 1;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+.cartpic3{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.cart3{
+    position: absolute;
+    top: -7px;
+    left: 50px;
+    font-family: 'CustomFont';
+    font-size: 15px;
+    color: white;
+}
+
+.prod3addtxt1{
+    position: absolute;
+    top: 90px ;
+    left: 5px;
+    font-family: 'LightFont';
+    font-size: 15px;
+    color: #285430;
+    text-decoration: line-through;
+}
+
+.prod3addtxt2{
+    position: absolute;
+    top: 90px ;
+    left: 40px;
+    font-family: 'CustomFont';
+    font-size: 40px;
+    
+}
+
+.prod3addtxt3{
+    position: absolute;
+    top: 230px ;
+    left: 10px;
+    width: 300px;
+    font-family: 'LightFont';
+    font-size: 11px;
+    line-height: 10px;
+    letter-spacing: 0.3px;
+}
+
+
+.prodOut3{
+    position: absolute;
+    top: -400%;
+    left: 55%;
+    width: 1000px;
+    height: 600px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    overflow: hidden;
+    
+    box-shadow: rgba(25, 25, 93, 0.25) 0px 25px 50px -20px, rgba(0, 0, 0, 0.3) 0px 30px 30px -30px;
+    z-index: 2;
+
+    opacity: 0;
+    transform: scale(0);
+
+    transition: 400ms ease;
+
+}
+
+.prodOut3.active3{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.prodOut3.inactive3{
+    opacity: 0;
+    transform: scale(0);
+}
+
+
+.prod3Outadd1{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 300px;
+
+
+    filter: drop-shadow(0px -10px 20px rgba(0, 0, 0, 0.2)) ;
+   
+}
+
+
+.prod3Outadd2{
+
+    font-family: 'CustomFont';
+    font-weight: bold;
+    font-size: 15px;
+    position: absolute;
+    top: 13%;
+    left: 43%;
+    width: 300px;
+
+   
+}
+
+.prod3Outadd3{
+
+    font-family: 'CustomFont';
+    font-size: 50px;
+    position: absolute;
+    top: 15%;
+    left: 43%;
+    width: 800px;
+
+   
+}
+
+.prod3Outadd4{
+
+    font-family: 'CustomFont';
+    font-size: 30px;
+    position: absolute;
+    top: 25%;
+    left: 47%;
+    color: #285430;
+}
+
+.prod3Outadd5{
+
+    font-family: 'LightFont';
+    font-size: 13px;
+    position: absolute;
+    top: 27%;
+    left: 43%;
+    width: 300px;
+
+   
+}
+
+.prod3Outadd6{
+
+    font-family: 'LightFont';
+    font-size: 13px;
+    position: absolute;
+    top: 34%;
+    left: 43%;
+    width: 300px;
+
+   
+}
+
+.prod3Outadd7{
+    position: absolute;
+    width: 30px;
+    top: 37%;
+    left: 48.4%;
+    
+    border: none;
+
+}
+
+
+.prod3Outadd8{
+    font-family: 'CustomFont';
+    font-size: 12px;
+    position: absolute;
+    top: 40%;
+    left: 43%;
+
+}
+
+.prod3Outadd9{
+    font-family: 'LightFont';
+    font-size: 10px;
+    position: absolute;
+    top: 45%;
+    left: 43%;
+    letter-spacing: 0.2px;
+
+}
+
+
+.prod3Outadd10{
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    top: 50%;
+    left: 43%;
+
+    border: none;
+
+}
+
+
+.prod3Outadd11{
+    font-family: 'LightFont';
+    font-size: 10px;
+    position: absolute;
+    top: 45%;
+    left: 57%;
+    letter-spacing: 0.2px;
+
+}
+
+
+.prod3Outadd12{
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    top: 50%;
+    left: 57%;
+
+    border: none;
+
+}
+
+.prod3Outadd13{
+    position: absolute;
+    width: 160px;
+    top: 62%;
+    left: 43%;
+    font-size: 10px;
+
+}
+
+.prod3Outadd14{
+    position: absolute;
+    width: 90px;
+    height: 27px;
+    top: 68%;
+    left: 43%;
+
+    border: none;
+
+}
+
+.prod3Outadd15{
+    position: absolute;
+    width: 110px;
+    height: 30px;
+    top: 68%;
+    left: 58%;
+    font-family: 'CustomFont';
+    color: white;
+    background-color: #285430;
+    border: none;
+    border-radius: 5px;
+
+}
+
+
+.prod3Exit{
+    position: absolute;
+    top: 5%;
+    left: 93%;
+    background-color: #F3F3F3;
+    border: none;
+}
+
+.prod3Outadd16{
+
+    font-family: 'LightFont';
+    font-size: 13px;
+    position: absolute;
+    top: 53%;
+    left: 43%;
+    width: 300px;
+
+   
+}
+
+.prod3Outadd17{
+
+    font-family: 'CustomFont';
+    font-size: 27px;
+    position: absolute;
+    top: 52%;
+    left:46%;
+    width: 300px;
+
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Product 4 Properties */
+.checkoutBg{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1100px;
+    opacity: 0;
+    clip: rect(0px 1000px 600px 0px);
+}
+
+.GreenProd4{
+    position: absolute;
+    top: -130px;
+    left: 125px;
+    width: 250px;
+    height: 590px;
+    background-color: #285430;
+    clip: rect(130px 900px 900px 0px);
+
+    border-radius: 130px;
+}
+
+.GreenProd4pic{
+    position: absolute;
+    top: 80%;
+    left: 85%;
+}
+.sampletxt4addtxt1{
+    position: absolute;
+    left: 10px;
+    font-size: 15px;
+    top: 250px;
+}
+
+.prod4maintxt{
+    position: absolute;
+    top: 50px;
+    left: 7px;
+}
+.ingre4{
+    position: relative;
+    top: 320px;
+    left: 7px;
+    font-family: 'LightFont';
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.buyProd4{
+    position: absolute;
+    top: 210px;
+    left: 10px;
+    width:130px;
+    height: 40px;
+    background-color: #285430;
+    opacity: 1;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+.cartpic4{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.cart4{
+    position: absolute;
+    top: -7px;
+    left: 50px;
+    font-family: 'CustomFont';
+    font-size: 15px;
+    color: white;
+}
+
+.prod4addtxt1{
+    position: absolute;
+    top: 90px ;
+    left: 5px;
+    font-family: 'LightFont';
+    font-size: 15px;
+    color: #285430;
+    text-decoration: line-through;
+}
+
+.prod4addtxt2{
+    position: absolute;
+    top: 90px ;
+    left: 40px;
+    font-family: 'CustomFont';
+    font-size: 40px;
+    
+}
+
+.prod4addtxt3{
+    position: absolute;
+    top: 230px ;
+    left: 10px;
+    width: 300px;
+    font-family: 'LightFont';
+    font-size: 11px;
+    line-height: 10px;
+    letter-spacing: 0.3px;
+}
+
+
+.prodOut4{
+    position: absolute;
+    top: -400%;
+    left: 55%;
+    width: 1000px;
+    height: 600px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    overflow: hidden;
+    
+    box-shadow: rgba(25, 25, 93, 0.25) 0px 25px 50px -20px, rgba(0, 0, 0, 0.3) 0px 30px 30px -30px;
+    z-index: 2;
+
+    opacity: 0;
+    transform: scale(0);
+
+    transition: 400ms ease;
+
+}
+
+.prodOut4.active4{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.prodOut4.inactive4{
+    opacity: 0;
+    transform: scale(0);
+}
+
+
+.prod4Outadd1{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 300px;
+
+
+    filter: drop-shadow(0px -10px 20px rgba(0, 0, 0, 0.2)) ;
+   
+}
+
+
+.prod4Outadd2{
+
+    font-family: 'CustomFont';
+    font-weight: bold;
+    font-size: 15px;
+    position: absolute;
+    top: 13%;
+    left: 43%;
+    width: 300px;
+
+   
+}
+
+.prod4Outadd3{
+
+    font-family: 'CustomFont';
+    font-size: 50px;
+    position: absolute;
+    top: 15%;
+    left: 43%;
+    width: 800px;
+
+   
+}
+
+.prod4Outadd4{
+
+    font-family: 'CustomFont';
+    font-size: 30px;
+    position: absolute;
+    top: 25%;
+    left: 47%;
+    color: #285430;
+}
+
+.prod4Outadd5{
+
+    font-family: 'LightFont';
+    font-size: 13px;
+    position: absolute;
+    top: 27%;
+    left: 43%;
+    width: 300px;
+
+   
+}
+
+.prod4Outadd6{
+
+    font-family: 'LightFont';
+    font-size: 13px;
+    position: absolute;
+    top: 34%;
+    left: 43%;
+    width: 300px;
+
+   
+}
+
+.prod4Outadd7{
+    position: absolute;
+    width: 30px;
+    top: 37%;
+    left: 48.4%;
+    
+    border: none;
+
+}
+
+
+.prod4Outadd8{
+    font-family: 'CustomFont';
+    font-size: 12px;
+    position: absolute;
+    top: 40%;
+    left: 43%;
+
+}
+
+.prod4Outadd9{
+    font-family: 'LightFont';
+    font-size: 10px;
+    position: absolute;
+    top: 45%;
+    left: 43%;
+    letter-spacing: 0.2px;
+
+}
+
+
+.prod4Outadd10{
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    top: 50%;
+    left: 43%;
+
+    border: none;
+
+}
+
+
+.prod4Outadd11{
+    font-family: 'LightFont';
+    font-size: 10px;
+    position: absolute;
+    top: 45%;
+    left: 57%;
+    letter-spacing: 0.2px;
+
+}
+
+
+.prod4Outadd12{
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    top: 50%;
+    left: 57%;
+
+    border: none;
+
+}
+
+.prod4Outadd13{
+    position: absolute;
+    width: 160px;
+    top: 62%;
+    left: 43%;
+    font-size: 10px;
+
+}
+
+.prod4Outadd14{
+    position: absolute;
+    width: 90px;
+    height: 27px;
+    top: 68%;
+    left: 43%;
+
+    border: none;
+
+}
+
+.prod4Outadd15{
+    position: absolute;
+    width: 110px;
+    height: 30px;
+    top: 68%;
+    left: 58%;
+    font-family: 'CustomFont';
+    color: white;
+    background-color: #285430;
+    border: none;
+    border-radius: 5px;
+
+}
+
+
+.prod4Exit{
+    position: absolute;
+    top: 5%;
+    left: 93%;
+    background-color: #F3F3F3;
+    border: none;
+}
+
+.prod4Outadd16{
+
+    font-family: 'LightFont';
+    font-size: 13px;
+    position: absolute;
+    top: 53%;
+    left: 43%;
+    width: 300px;
+
+   
+}
+
+.prod4Outadd17{
+
+    font-family: 'CustomFont';
+    font-size: 27px;
+    position: absolute;
+    top: 52%;
+    left:46%;
+    width: 300px;
+
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Product 5 Properties */
+.checkoutBg{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1100px;
+    opacity: 0;
+    clip: rect(0px 1000px 600px 0px);
+}
+
+.GreenProd5{
+    position: absolute;
+    top: -130px;
+    left: 125px;
+    width: 250px;
+    height: 590px;
+    background-color: #285430;
+    clip: rect(130px 900px 900px 0px);
+
+    border-radius: 130px;
+}
+
+.GreenProd5pic{
+    position: absolute;
+    top: 80%;
+    left: 85%;
+}
+.sampletxt5addtxt1{
+    position: absolute;
+    left: 10px;
+    font-size: 15px;
+    top: 250px;
+}
+
+.prod5maintxt{
+    position: absolute;
+    top: 50px;
+    left: 7px;
+}
+.ingre5{
+    position: relative;
+    top: 320px;
+    left: 7px;
+    font-family: 'LightFont';
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.buyProd5{
+    position: absolute;
+    top: 210px;
+    left: 10px;
+    width:130px;
+    height: 40px;
+    background-color: #285430;
+    opacity: 1;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+.cartpic5{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.cart5{
+    position: absolute;
+    top: -7px;
+    left: 50px;
+    font-family: 'CustomFont';
+    font-size: 15px;
+    color: white;
+}
+
+.prod5addtxt1{
+    position: absolute;
+    top: 90px ;
+    left: 5px;
+    font-family: 'LightFont';
+    font-size: 15px;
+    color: #285430;
+    text-decoration: line-through;
+}
+
+.prod5addtxt2{
+    position: absolute;
+    top: 90px ;
+    left: 40px;
+    font-family: 'CustomFont';
+    font-size: 40px;
+    
+}
+
+.prod5addtxt3{
+    position: absolute;
+    top: 230px ;
+    left: 10px;
+    width: 300px;
+    font-family: 'LightFont';
+    font-size: 11px;
+    line-height: 10px;
+    letter-spacing: 0.3px;
+}
+
+
+.prodOut5{
+    position: absolute;
+    top: -400%;
+    left: 55%;
+    width: 1000px;
+    height: 600px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    overflow: hidden;
+    
+    box-shadow: rgba(25, 25, 93, 0.25) 0px 25px 50px -20px, rgba(0, 0, 0, 0.3) 0px 30px 30px -30px;
+    z-index: 2;
+
+    opacity: 0;
+    transform: scale(0);
+
+    transition: 400ms ease;
+
+}
+
+.prodOut5.active5{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.prodOut5.inactive5{
+    opacity: 0;
+    transform: scale(0);
+}
+
+
+.prod5Outadd1{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 300px;
+
+
+    filter: drop-shadow(0px -10px 20px rgba(0, 0, 0, 0.2)) ;
+   
+}
+
+
+.prod5Outadd2{
+
+    font-family: 'CustomFont';
+    font-weight: bold;
+    font-size: 15px;
+    position: absolute;
+    top: 13%;
+    left: 43%;
+    width: 300px;
+
+   
+}
+
+.prod5Outadd3{
+
+    font-family: 'CustomFont';
+    font-size: 50px;
+    position: absolute;
+    top: 15%;
+    left: 43%;
+    width: 800px;
+
+   
+}
+
+.prod5Outadd4{
+
+    font-family: 'CustomFont';
+    font-size: 30px;
+    position: absolute;
+    top: 25%;
+    left: 47%;
+    color: #285430;
+}
+
+.prod5Outadd5{
+
+    font-family: 'LightFont';
+    font-size: 13px;
+    position: absolute;
+    top: 27%;
+    left: 43%;
+    width: 300px;
+
+   
+}
+
+.prod5Outadd6{
+
+    font-family: 'LightFont';
+    font-size: 13px;
+    position: absolute;
+    top: 34%;
+    left: 43%;
+    width: 300px;
+
+   
+}
+
+.prod5Outadd7{
+    position: absolute;
+    width: 30px;
+    top: 37%;
+    left: 48.4%;
+    
+    border: none;
+
+}
+
+
+.prod5Outadd8{
+    font-family: 'CustomFont';
+    font-size: 12px;
+    position: absolute;
+    top: 40%;
+    left: 43%;
+
+}
+
+.prod5Outadd9{
+    font-family: 'LightFont';
+    font-size: 10px;
+    position: absolute;
+    top: 45%;
+    left: 43%;
+    letter-spacing: 0.2px;
+
+}
+
+
+.prod5Outadd10{
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    top: 50%;
+    left: 43%;
+
+    border: none;
+
+}
+
+
+.prod5Outadd11{
+    font-family: 'LightFont';
+    font-size: 10px;
+    position: absolute;
+    top: 45%;
+    left: 57%;
+    letter-spacing: 0.2px;
+
+}
+
+
+.prod5Outadd12{
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    top: 50%;
+    left: 57%;
+
+    border: none;
+
+}
+
+.prod5Outadd13{
+    position: absolute;
+    width: 160px;
+    top: 62%;
+    left: 43%;
+    font-size: 10px;
+
+}
+
+.prod5Outadd14{
+    position: absolute;
+    width: 90px;
+    height: 27px;
+    top: 68%;
+    left: 43%;
+
+    border: none;
+
+}
+
+.prod5Outadd15{
+    position: absolute;
+    width: 110px;
+    height: 30px;
+    top: 68%;
+    left: 58%;
+    font-family: 'CustomFont';
+    color: white;
+    background-color: #285430;
+    border: none;
+    border-radius: 5px;
+
+}
+
+
+.prod5Exit{
+    position: absolute;
+    top: 5%;
+    left: 93%;
+    background-color: #F3F3F3;
+    border: none;
+}
+
+.prod5Outadd16{
+
+    font-family: 'LightFont';
+    font-size: 13px;
+    position: absolute;
+    top: 53%;
+    left: 43%;
+    width: 300px;
+
+   
+}
+
+.prod5Outadd17{
+
+    font-family: 'CustomFont';
+    font-size: 27px;
+    position: absolute;
+    top: 52%;
+    left:46%;
+    width: 300px;
+
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider-nav a{
+    opacity: 1;
+    transition:opacity ease 250ms;
+}
+
+
+
+
+::-webkit-scrollbar {
+    width: 10px;   
+
+  }
+    ::-webkit-scrollbar-thumb {
+    background-color:  rgba(141, 141, 141, 0.1);
+    border-radius: 6px;   
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(170, 163, 163,0.1);
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;   
+    border-radius: 6px;   
+  }
+
+
+
+
+.completed{
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    height: 150px;
+    width: 300px;
+    background-color: white;
+    border-radius: 5px;
+
+    z-index: 3;
+
+    box-shadow: rgba(25, 25, 93, 0.25) 0px 25px 50px -20px, rgba(0, 0, 0, 0.3) 0px 30px 30px -30px;
+
+
+    opacity: 0;
+    transform: scale(0);
+    transition: 400ms ease;
+}
+
+.completed.active{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.completedpic{
+    position: absolute;
+    top: 10%;
+    left: 35%;
+}
+
+.completedtxt{
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    font-family: 'CustomFont';
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Product 6 Properties */
+.checkoutBg{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1100px;
+    opacity: 0;
+    clip: rect(0px 1000px 600px 0px);
+}
+
+.GreenProd6{
+    position: absolute;
+    top: -130px;
+    left: 125px;
+    width: 250px;
+    height: 590px;
+    background-color: #285430;
+    clip: rect(130px 900px 900px 0px);
+
+    border-radius: 130px;
+}
+
+.GreenProd6pic{
+    position: absolute;
+    top: 80%;
+    left: 85%;
+}
+.sampletxt6addtxt1{
+    position: absolute;
+    left: 10px;
+    font-size: 15px;
+    top: 250px;
+}
+
+.prod6maintxt{
+    position: absolute;
+    top: 0px;
+    left: 7px;
+}
+.ingre6{
+    position: relative;
+    top: 320px;
+    left: 7px;
+    font-family: 'LightFont';
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.buyProd6{
+    position: absolute;
+    top: 210px;
+    left: 10px;
+    width:130px;
+    height: 40px;
+    background-color: #285430;
+    opacity: 1;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+.cartpic6{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.cart6{
+    position: absolute;
+    top: -7px;
+    left: 50px;
+    font-family: 'CustomFont';
+    font-size: 15px;
+    color: white;
+}
+
+.prod6addtxt1{
+    position: absolute;
+    top: 90px ;
+    left: 5px;
+    font-family: 'LightFont';
+    font-size: 15px;
+    color: #285430;
+    text-decoration: line-through;
+}
+
+.prod6addtxt2{
+    position: absolute;
+    top: 90px ;
+    left: 40px;
+    font-family: 'CustomFont';
+    font-size: 40px;
+    
+}
+
+.prod6addtxt3{
+    position: absolute;
+    top: 230px ;
+    left: 10px;
+    width: 300px;
+    font-family: 'LightFont';
+    font-size: 11px;
+    line-height: 10px;
+    letter-spacing: 0.3px;
+}
+
+
+.prodOut6{
+    position: absolute;
+    top: -400%;
+    left: 55%;
+    width: 1000px;
+    height: 600px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    overflow: hidden;
+    
+    box-shadow: rgba(25, 25, 93, 0.25) 0px 25px 50px -20px, rgba(0, 0, 0, 0.3) 0px 30px 30px -30px;
+    z-index: 2;
+
+    opacity: 0;
+    transform: scale(0);
+
+    transition: 400ms ease;
+
+}
+
+.prodOut6.active6{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.prodOut6.inactive6{
+    opacity: 0;
+    transform: scale(0);
+}
+
+
+.prod6Outadd1{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 300px;
+
+
+    filter: drop-shadow(0px -10px 20px rgba(0, 0, 0, 0.2)) ;
+   
+}
+
+
+.prod6Outadd2{
+
+    font-family: 'CustomFont';
+    font-weight: bold;
+    font-size: 15px;
+    position: absolute;
+    top: 13%;
+    left: 43%;
+    width: 300px;
+
+   
+}
+
+.prod6Outadd3{
+
+    font-family: 'CustomFont';
+    font-size: 50px;
+    position: absolute;
+    top: 15%;
+    left: 43%;
+    width: 800px;
+
+   
+}
+
+.prod6Outadd4{
+
+    font-family: 'CustomFont';
+    font-size: 30px;
+    position: absolute;
+    top: 25%;
+    left: 47%;
+    color: #285430;
+}
+
+.prod6Outadd5{
+
+    font-family: 'LightFont';
+    font-size: 13px;
+    position: absolute;
+    top: 27%;
+    left: 43%;
+    width: 300px;
+
+   
+}
+
+.prod6Outadd6{
+
+    font-family: 'LightFont';
+    font-size: 13px;
+    position: absolute;
+    top: 34%;
+    left: 43%;
+    width: 300px;
+
+   
+}
+
+.prod6Outadd7{
+    position: absolute;
+    width: 30px;
+    top: 37%;
+    left: 48.4%;
+    
+    border: none;
+
+}
+
+
+.prod6Outadd8{
+    font-family: 'CustomFont';
+    font-size: 12px;
+    position: absolute;
+    top: 40%;
+    left: 43%;
+
+}
+
+.prod6Outadd9{
+    font-family: 'LightFont';
+    font-size: 10px;
+    position: absolute;
+    top: 45%;
+    left: 43%;
+    letter-spacing: 0.2px;
+
+}
+
+
+.prod6Outadd10{
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    top: 50%;
+    left: 43%;
+
+    border: none;
+
+}
+
+
+.prod6Outadd11{
+    font-family: 'LightFont';
+    font-size: 10px;
+    position: absolute;
+    top: 45%;
+    left: 57%;
+    letter-spacing: 0.2px;
+
+}
+
+
+.prod6Outadd12{
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    top: 50%;
+    left: 57%;
+
+    border: none;
+
+}
+
+.prod6Outadd13{
+    position: absolute;
+    width: 160px;
+    top: 62%;
+    left: 43%;
+    font-size: 10px;
+
+}
+
+.prod6Outadd14{
+    position: absolute;
+    width: 90px;
+    height: 27px;
+    top: 68%;
+    left: 43%;
+
+    border: none;
+
+}
+
+.prod6Outadd15{
+    position: absolute;
+    width: 110px;
+    height: 30px;
+    top: 68%;
+    left: 58%;
+    font-family: 'CustomFont';
+    color: white;
+    background-color: #285430;
+    border: none;
+    border-radius: 5px;
+
+}
+
+
+.prod6Exit{
+    position: absolute;
+    top: 5%;
+    left: 93%;
+    background-color: #F3F3F3;
+    border: none;
+}
+
+.prod6Outadd16{
+
+    font-family: 'LightFont';
+    font-size: 13px;
+    position: absolute;
+    top: 53%;
+    left: 43%;
+    width: 300px;
+
+   
+}
+
+.prod6Outadd17{
+
+    font-family: 'CustomFont';
+    font-size: 27px;
+    position: absolute;
+    top: 52%;
+    left:46%;
+    width: 300px;
+
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.accountMain{
+    width: 80px;
+    height: 35px;
+    position: absolute;
+    left: 110%;
+    top: 70px;
+
+    background-color: none;
+
+    border: 2px solid #285430;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    
+}
+
+
+
+.userbttn{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    width: 25px;
+
+}
+
+.mainAcountCont{
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    height: 200px;
+    width: 250px;
+    background-color: white;
+    z-index: 2;
+    border-radius: 10px;
+
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    
+    transform: scale(0);
+    opacity: 0;
+
+    transition: 300ms ease;
+}
+
+
+.mainAcountCont.active{
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+
+.mainAccountContpic1{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 20%;
+    clip-path: circle(50%);
+
+}
+
+.mainAccTxt1{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    font-family: 'CustomFont';
+    font-size: 13px;
+
+}
+
+.mainAccountContpic2{
+    position: absolute;
+    top: 8%;
+    left: 70%;
+    width: 15%;
+
+}
+
+.mainaccountbttn1{
+    position: absolute;
+    font-size: 17px;
+    top: 70%;
+    left: 33%;
+    font-family: 'CustomFont';
+    background-color: #F8F8F8;
+    color: black;
+    border: none;
+
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+.Confirmation{
+    position: absolute;
+    top: 105%;
+    left: -10%;
+    background-color: white;
+    height: 100px;
+    width: 300px;
+    border-radius: 5px;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+    transform: scale(0);
+    opacity: 0;
+
+    transition: 300ms ease;
+}
+
+.Confirmation.active{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.confirmationtxt1{
+    position: absolute;
+    left: 12%;
+    font-family: 'CustomFont';
+}
+
+.confirmbttn1{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    color: white;
+    font-family: 'CustomFont';
+    font-size: 15px;
+    background-color: #285430;
+    height: 30px;
+
+    border-radius: 5px;
+    border: none;
+
+    cursor: pointer;
+
+}
+
+.confirmbttn2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-family: 'CustomFont';
+    font-size: 15px;
+    background-color: #285430;
+    height: 30px;
+
+    border-radius: 5px;
+    border: none;
+
+    cursor: pointer;
+
+}
+
+.accountExit{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    background-color: white;
+
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Imported Fonts */
+@font-face {
+    font-family: 'CustomFont';
+    src: url(NeueMontreal-Medium.otf);
+}
+
+@font-face {
+    font-family: 'LightFont';
+    src: url(NeueMontreal-Regular.otf);
+}
+
+@font-face {
+    font-family: 'mainFont';
+    src: url(Akira\ Expanded\ Demo.otf);
+}

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="Stylesheet" href="MainStyle(Login).css">
+        <title>Coffee Corner</title>
+        <link rel="Icon" href="Main Logo.png">
+    </head>
+    <body>
+
+        <img src="MainBgWline.png" class="MainBg">
+            <div class="header">
+                
+            </div>
+
+                <div class="navContainer">
+                    
+                        <nav>
+                            <a href="./Main(Login).html" class="nav1">Home</a>
+                            <a href="./About(Login).html" class="nav2">About Us</a>
+                            <a href="./Contact(Login).html" class="nav3">Contact</a>
+                            <a href="./Menu.html" class="nav4">Menu</a>   
+                        </nav>
+                        <a href="./Main.html"><img src="MainLogoColoredInverted.png" width="100px" class="mainLogoClass"></a>
+                        <a class="accountMain" onclick="accounContOpen()"><img src="user.png" width="20" class="userbttn"></a>
+
+                        <script>
+                            function accounContOpen(){
+                            const mainAcountCont = document.getElementById("mainAcountCont");
+                            mainAcountCont.classList.add("active");
+
+                        }
+
+                        function accounContClose(){
+                            const mainAcountCont = document.getElementById("mainAcountCont");
+                            mainAcountCont.classList.remove("active");
+
+                        }
+                        </script>
+                </div>
+
+<!-- //////////////////////////////////////////////////////////////////////////////// -->
+                    <div class="mainAcountCont" id="mainAcountCont">
+                        <button onclick="accounContClose()" class="accountExit"><img src="reject.png" width="20" ></button>
+                        <img src="MainLogoColoredInverted.png" class="mainAccountContpic2">
+                        <img src="AHAHHAHA.JPG" class="mainAccountContpic1">
+                        <p class="mainAccTxt1"> John Michael Santos</p>
+                        <button class="mainaccountbttn1" onclick="ConfirmationOpen()">LOG OUT</button>
+
+                        <div class="Confirmation" id="Confirmation">
+                            <p class="confirmationtxt1">Are you sure you want to log out?</p>
+                            <a href="./Main.html"><button class="confirmbttn1" >YES</button></a>
+                            <button class="confirmbttn2" onclick="ConfirmationClose()">CANCEL</button>
+                        </div>
+                        <script>
+
+
+                            function ConfirmationOpen(){
+                            const Confirmation = document.getElementById("Confirmation");
+                            Confirmation.classList.add("active");
+
+                        }
+
+
+                        function ConfirmationClose(){
+                            const Confirmation = document.getElementById("Confirmation");
+                            Confirmation.classList.remove("active");
+
+                        }
+                        </script>
+                    </div>
+
+
+
+
+
+
+
+
+                    <h1 class="mainTxt">WAKE TO<br>&nbsp;&nbsp;&nbsp;WONDER</h1>
+                    <pre class="subTxt">Where every sip awakens your senses,
+every aroma invites you to relax
+and every visit transforms into a 
+moment of comfort and joy.Whether 
+you're starting your day, taking a break, 
+or simply indulging in a little 'me time</pre>   
+                        <a href="./Menu.html">
+                        <div class="orderBttn">
+                            <img src="shopping-basket.png" width="30px" class="mainCartIcon"/>
+                            <p class="orderBttnTxt">ORDER NOW</p>
+                        </div></a>
+                        <div class="pic1">
+                            <img src="coffeesample.png" width="250px">
+                            <p class="mainProd prod1">Iced Latte</p>
+                            <P class="prod1price">89 pesos</P>
+                            <!--<p class="prod1desc">An iced latte is a cold coffee drink made with espresso, milk, and ice, offering a smooth, refreshing taste.</p>-->
+                        </div>
+
+                        <div class="pic2">
+                            <img src="Cappuccino.webp"  width="150px">
+                            <p class="mainProd prod2">Americano</p>
+                            <P class="prod2price">99 pesos</P>
+                            <!--<p class="prod2desc">
+                                An iced Americano is a cold drink made by diluting espresso with water and ice, resulting in a lighter, refreshing coffee.</p>-->
+                        </div>
+                        
+
+                        <div class="pic3">
+                            <p class="mainProd prod3">Strawberry<br>Cupcake</p>
+                            <P class="prod3price">59 pesos</P>
+                            <img src="Pastry1.png"  width="350px">
+                        </div>
+                       
+
+                        <p class="mainFollow">F<br>O<br>L<br>L<br>O<br>W<br><br>U<br>S</p>
+                        <a href="./FacebookView.html" target="_blank"><img src="facebook.png" width="20px" class="mainSocials1"></a>
+                        <a href="./InstagramView.html" target="_blank"><img src="social-media.png" width="27px" class="mainSocials2"></a>
+
+                        
+ 
+                       
+                        <div class="popup" id="popup">
+                            <img src="loginPicc.jpg" width="410px" class="loginpic1">
+                            <p class="loginSideMaintxt">Welcome Back!</p>
+                            <p class="loginTxtSub">To keep connected with us<br>
+                                please login with your<br>
+                                current account</p>
+                                <p class="addtxt1">Don't have an account?</p>
+                            <a href="#" onclick="signupLabas()"><p class="signupBttnmain">Sign up</p></a>
+                            <img src="MainLogoColoredInverted.png" width="50px" class="mainlogologin1">
+                            <p class="addtxt2">Log in account</p>
+                            <p class="addtxt3">Log in with</p>
+                            <a onclick="googleLogin()"><div class="loginwithG">
+                                <img src="google.png" width="23px" class="loginwithPic1">
+                                <p class="loginwithGtxt">Login with Google</p>
+                            </div></a>
+                            <div class="line">
+                                
+                            </div>
+                            <div class="line2">
+                                <p class="addtxt4">Or</p>
+                            </div>
+
+                            <p class="cred addtxt5">Username</p>
+                            <input type="text" class="LoginField" >
+                            <p class="cred addtxt6">Password</p>
+                            <input type="password" class="PasswordField">
+                            <input type="checkbox" class="checkbox1">
+                            <p class="addtxt7">Remember me</p>
+                          
+                            
+
+                            <a href="./Menu.html"><div class="loginContinue">
+                                    <p class="addtxt9">Log in</p>
+                            </div></a>
+
+                            <a onclick="LoginClose()"><img src="reject.png" width="20px" class="close"></a>
+
+                            <a href="#"><img src="profile.png" width="25px" class="LoginGuest">
+                                <p class="LoginGuest2">Login as a Guest</p>
+                            </a>
+                            <p class="addtxt10">This is the day that the Lord has made<br>
+                                let us rejoice and be glad in it."</p>
+                            
+                            <p class="addtxt11">Psalm 118:24</p>
+                        </div>
+
+
+
+                        <div class="loginGoogle" id="loginGoogle">
+                            <img src="Google_2015_logo.svg.png" width="60px" class="googlepic1">
+                            <p class="googletxt1">Log in</p>
+                            <p class="googletxt2">to continue to Coffe Corner</p>
+                            <p class="googletxt3">Choose an account</p>
+
+                            <a href="./Menu.html"><button class="googlebttn1" href>
+                                <img src="AHAHHAHA.JPG" class="googlebttnpic1" width="30">
+
+                                <p class="googlebttntxt1">John Michael Santos</p>
+                                <P class="googlebttntxt2">johnmichaelsantos340@gmail.com</P>
+
+                                
+                            </button></a>
+
+                            <a onclick="signupLabas()"><p class="googletxt4">Sign in</p></a>
+
+                            <button class="googlebttn2" onclick="googleLoginclose()"> Cancel</button>
+                        </div>
+
+                        <div class="signupContainer" id="signupContainer">
+                            <img src="pic5.jpg" class="signupContpic1" width="580px">
+                            <p class="signupContainertxt1">Sign up</p>
+                            <p class="signSubtxt1">Sign up with</p>
+                            <button class="signupContBttn1" onclick="googlesigninopen()">
+                                <img src="google.png" width="20" class="signinpic1">
+                                <p class="signinaddtxt1">Sign up with Google</p>
+                            </button>
+                            <div class="signinline1">
+
+                            </div>
+
+                            <div class="signinline2">
+                                
+                            </div>
+                            <p class="signinaddtxt2">or</p>
+                            <p class="signinaddtxt3">Email</p>
+                            <input type="text" class="signinadd1" id="email">
+                            <p class="signinaddtxt4">Username</p>
+                            <input type="text" class="signinadd2" id="username">
+                            <p class="signinaddtxt5">Password</p>
+                            <input type="password" class="signinadd3" id="password">
+                            <a href=""><button class="signinadd4" onclick="validateForm(event)">
+                                Sign up
+                            </button></a>
+
+                            <p class="signinadd5">Already have an account? <a onclick="closeSign()"><strong><u>Log in</u></strong></a></p>
+
+                            <button class="signinadd6" onclick="signupclose()"><img src="reject.png" width="20px" ></button>
+                            <p class="signinadd7">Stay Connected!</p>
+                            <p class="signinadd8">Be part of our journey<br>follow along for the latest insights and news.</p>
+                        </div>
+
+
+            
+                        <div class="signinCreated" id="signinCreated">
+                            <img src="checked.gif" width="70px" class="completedpic">
+                            <p class="completedtxt">Account Created Successfully!</p>
+                        </div>
+<!-- ////////////////////////////////////////////////////////////////////////////////////// -->
+                        <div class="googlesignin" id="googlesignin">
+                            <img src="Google_2015_logo.svg.png" width="60px" class="googlepic1">
+                            <p class="googletxt1">Sign up</p>
+                            <p class="googletxt2">to continue to Coffe Corner</p>
+                            <p class="googletxt3">Choose an account</p>
+
+
+                            <button class="signinBttn1" onclick="completedSigninGoogle()"> 
+                                <img src="person1.png" class="signinbttnpic1" width="30">
+                                <p class="signinbttntxt1">Michael John Santos</p>
+                                <P class="signinbttntxt2">michaeljohnsantos340@gmail.com</P>
+                            </button>
+
+                            <button class="signinBttn2" onclick="completedSigninGoogle()"> 
+                                <img src="person2.JPG" class="signinbttnpic1" width="30">
+                                <p class="signinbttntxt1">Szanil Gueco mapagmahal</p>
+                                <P class="signinbttntxt2">mapagmahal123@gmail.com</P>
+                            </button>
+
+
+                            <button class="signinBttn3" onclick="completedSigninGoogle()"> 
+                                <img src="person3.jpg" class="signinbttnpic1" width="30">
+                                <p class="signinbttntxt1">Leynard batongbakal</p>
+                                <P class="signinbttntxt2">leynardbatongbakal@gmail.com</P>
+                            </button>
+
+
+                            <a onclick="labasfromSignInGoogle()"><p class="signtxt1">Login in</p></a>
+
+                            <button class="googlebttn2" onclick="googlesigninclose()"> Cancel</button>
+                        </div>
+
+                    <script  type="text/javascript">
+
+                        function validateForm(event) {
+                            event.preventDefault(); // Prevents form submission
+                            const email = document.getElementById('email').value.trim();
+                            const username = document.getElementById('username').value.trim();
+                            const password = document.getElementById('password').value.trim();
+
+                            if (!email || !username || !password) {
+                                alert('Please fill out all fields');
+                            } else {
+                                alert('Sign in Successfully!');
+                                document.getElementById('email').value = '';
+                                document.getElementById('username').value = '';
+                                document.getElementById('password').value= '';
+
+                                completeOrder();
+                            
+                            }
+                        }
+
+                        function completeOrder(){
+                            const signinCreated = document.getElementById("signinCreated");
+                            signinCreated.classList.add("active");
+
+                                                                
+                            setTimeout(() => {
+                            signinCreated.classList.remove("active");
+                            }, 3000);
+                        }
+                        function signupLabas(){
+                            const signupContainer = document.getElementById("signupContainer");
+                            signupContainer.classList.remove("inactive3");
+                            signupContainer.classList.add("active3");
+
+                            LoginClose();
+                        }
+
+                        function signupclose(){
+                            const signupContainer = document.getElementById("signupContainer");
+                            signupContainer.classList.add("inactive3");
+                            signupContainer.classList.remove("active3");
+                        }
+
+                        function closeSign(event) {
+                            signupclose()
+                            labas();
+                        }
+                        function googleLogin(){
+                            const loginGoogle = document.getElementById("loginGoogle");
+                            loginGoogle.classList.add("activeGoogle");
+                        }
+
+                        function googleLoginclose(){
+                            const loginGoogle = document.getElementById("loginGoogle");
+                            loginGoogle.classList.remove("activeGoogle");
+                        }
+
+
+                        ////////////////////////////////////////////////////////////////////////
+                        function completedSigninGoogle(){
+                            completeOrder();
+                            googlesigninclose();
+                        }
+                        function googlesigninopen(){
+                            const googlesignin = document.getElementById("googlesignin");
+                            googlesignin.classList.add("activesignin1");
+                        }
+
+
+                        function googlesigninclose(){
+                            const googlesignin = document.getElementById("googlesignin");
+                            googlesignin.classList.remove("activesignin1");
+                        }
+
+
+
+
+
+                        function LoginClose(){
+                                const popup = document.getElementById("popup");
+                                popup.classList.remove("active");
+                                popup.classList.add("inactive");
+                        }
+        
+                        function labas(){
+                            const popup = document.getElementById("popup");
+                            popup.classList.remove("inactive");
+                            popup.classList.add("active");
+                        }
+
+
+
+                                document.querySelector('.loginContinue').addEventListener('click', function(event) {
+                                const username = document.querySelector('.LoginField').value;
+                                const password = document.querySelector('.PasswordField').value;
+
+                                if (username === 'Michael' && password === '123') {
+                                    // Successful login, proceed to next page or perform actions
+                                    window.location.href = "./Menu.html";
+                                } else {
+                                    // Show an error message or handle failed login
+                                    alert('Incorrect username or password. Please try again.');
+                                    event.preventDefault(); // Prevents redirection if login fails
+                                }
+                            });
+        
+                                const loginField = document.querySelector('.LoginField');
+                                const passwordField = document.querySelector('.PasswordField');
+        
+                                // Function to check if input has value and add/remove class
+                                function toggleLabelClass(input, labelClass) {
+                                    if (input.value) {
+                                    input.classList.add('has-value');
+                                    } else {
+                                    input.classList.remove('has-value');
+                                    }
+                                }
+        
+                                // Add event listeners for input events on both fields
+                                loginField.addEventListener('input', function() {
+                                    toggleLabelClass(loginField, 'has-value');
+                                });
+        
+                                passwordField.addEventListener('input', function() {
+                                    toggleLabelClass(passwordField, 'has-value');
+                                });
+        
+                                // Trigger on page load in case inputs already have values (like after a form submission)
+                                toggleLabelClass(loginField, 'has-value');
+                                toggleLabelClass(passwordField, 'has-value');
+                                    
+                        </script>
+    </body>
+</html>

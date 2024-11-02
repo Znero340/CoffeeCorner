@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link rel="stylesheet" href="ContactStyle(Login).css">
+            <link rel="Icon" href="Main Logo.png">
+
+            <title>Coffee Corner</title>
+    </head>
+
+    <body>
+        <div class="header">
+                
+        </div>
+
+
+            <div class="navContainer">
+                
+                    <nav>
+                        <a href="./Main(Login).html" class="nav1">Home</a>
+                        <a href="./About(Login).html" class="nav2">About Us</a>
+                        <a href="./Contact(Login).html" class="nav3">Contact</a>
+                        <a href="./Menu.html" class="nav4">Menu</a>   
+                    </nav>
+                    <a href="./Main.html"><img src="MainLogoColoredInverted.png" width="100px" class="mainLogoClass"></a>
+                    <a class="accountMain" onclick="accounContOpen()"><img src="user.png" width="20" class="userbttn"></a>
+
+                        <script>
+                            function accounContOpen(){
+                            const mainAcountCont = document.getElementById("mainAcountCont");
+                            mainAcountCont.classList.add("active");
+
+                        }
+
+                        function accounContClose(){
+                            const mainAcountCont = document.getElementById("mainAcountCont");
+                            mainAcountCont.classList.remove("active");
+
+                        }
+                        </script>
+            </div>
+
+
+            <div class="mainAcountCont" id="mainAcountCont">
+                <button onclick="accounContClose()" class="accountExit"><img src="reject.png" width="20" ></button>
+                <img src="MainLogoColoredInverted.png" class="mainAccountContpic2">
+                <img src="AHAHHAHA.JPG" class="mainAccountContpic1">
+                <p class="mainAccTxt1"> John Michael Santos</p>
+                <button class="mainaccountbttn1" onclick="ConfirmationOpen()">LOG OUT</button>
+
+                <div class="Confirmation" id="Confirmation">
+                    <p class="confirmationtxt1">Are you sure you want to log out?</p>
+                    <a href="./Main.html"><button class="confirmbttn1" >YES</button></a>
+                    <button class="confirmbttn2" onclick="ConfirmationClose()">CANCEL</button>
+                </div>
+                <script>
+
+
+                    function ConfirmationOpen(){
+                    const Confirmation = document.getElementById("Confirmation");
+                    Confirmation.classList.add("active");
+
+                }
+
+
+                function ConfirmationClose(){
+                    const Confirmation = document.getElementById("Confirmation");
+                    Confirmation.classList.remove("active");
+
+                }
+                </script>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="container1">
+
+            </div>
+            <div class="container2">
+                <p class="maintxt1">Contact</p>
+
+            </div>
+
+            <img src="MainLogoGreen.png " class="contactpic1">
+
+            <p class="maintxt2"> Discover New Flavors! Get the scoop on our latest brews, seasonal specials, and handpicked coffee blends that add a fresh twist to your daily cup.</p>
+            
+
+            <p class="maintxt3"> Smooth Ordering Experience Got questions about your order? Our team is here to help, from online tracking to in-store pickups!</p>
+            <div class="container3">
+                <p class="maintxt4">Share Your Thoughts! Your feedback fuels our passion. Love something? Need something more? We’d love to hear from you!</p>
+                <img src="MainLogoGreen.png" class="contactpic2">
+                
+            </div> 
+            
+            <img src="ContactUspic4.jpg" class="contactpic3">
+            <p class="maintxt5">Hosting an Event? Make it memorable with Coffee Corner’s catering services. Perfect for office gatherings, parties, or any celebration that needs a little extra buzz!</p>
+            <p class="maintxt6">Join Our Family Looking for an opportunity to work with us? Reach out for the latest job openings and become part of the Coffee Corner crew!</p>
+            <nav class="maintxt7">
+                <a>FIND</a>
+                <a>YOURSELF</a>
+                <a>HERE</a>
+            </nav>
+            <p class="maintxt8">Come for the coffee, stay for the experience. Contact Coffee Corner today and let’s make your day a little brighter!</p>
+
+
+            <div class="container4">
+                <p class="maintxt11">Get in<br>&nbsp;&nbsp;&nbsp;&nbsp;touch<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with us</p>
+                <p class="maintxt12">Address</p>
+                <p class="maintxt13">Rosal St Purok4<br>Dakila,Malolos City Bulcan</p>
+                <p class="maintxt14">Phone</p>
+                <p class="maintxt15">+639 231 456 789</p>
+                <p class="maintxt16">Email</p>
+                <p class="maintxt17">CoffeCorner@gmail.com</p>
+                <p class="maintxt18">Our Socials</p>
+
+                <a href="./FacebookView.html" target="_blank"><img src="fbgreen.png" class="maintxt19"></a>
+                <a href="./InstagramView.html" target="_blank"><img src="iggreen.png" class="maintxt20"></a>
+            </div>
+
+            <div class="container5">
+                <p class="maintxt9">Never<br>Miss<br>A Thing.</p>
+                <p class="maintxt10">Let us know your email and you will get notified when we launch a new product, event or a new promotion</p>
+                <input type="text" class="textfield1" id="textfield12" >
+                <button class="bttn1" onclick="subscribe()"><img src="paper-plane.png" width="15" class="bttn1pic1">SUBSCRIBE</button>
+            </div>
+            <div class="container6">
+                <p class="maintxt21">© COFFE CORNER 2024 ALL RIGHTS RESERVED</p>
+                <p class="maintxt22">DESIGN BY SANTOS MICHAEL R</p>
+            </div>
+
+
+            <div class="signinCreated" id="signinCreated">
+                <img src="checked.gif" width="70px" class="completedpic">
+                <p class="completedtxt">Sent Successfully!</p>
+            </div>
+
+            <script type="text/javascript">
+                    function subscribe(){
+                        let fill = document.getElementById('textfield12').value;
+                        if(fill.length === 0){
+                            alert('Please Fill up');
+                        }
+                        else{
+                            alert('Email Sent!');
+                            document.getElementById('textfield12').value ='';
+
+                            completeOrder();
+                        }
+                    }
+
+
+
+                    function completeOrder(){
+                            const signinCreated = document.getElementById("signinCreated");
+                            signinCreated.classList.add("active1");
+                                                                
+                            setTimeout(() => {
+                            signinCreated.classList.remove("active1");
+                            }, 3000);
+                        }
+            </script>
+    </body> 
+</html>

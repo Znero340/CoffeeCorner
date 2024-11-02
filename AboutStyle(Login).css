@@ -1,0 +1,828 @@
+body{
+    overflow-x: hidden;
+}
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.8;
+    }
+
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+    
+}
+
+.MainBg{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+
+    /*animation-name: backgroundAnimation;
+    animation-duration: 4s;*/
+}
+
+
+
+/* Header */
+
+.header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    box-shadow: rgba(111, 255, 159, .1) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    opacity: 0.8;
+}
+
+.mainLogoClass{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
+
+
+/* Nav */
+.navContainer{
+    position: absolute;
+    top: -50px;
+    left: -500px;
+    height: 200px;
+    width: 100%;
+
+    animation-name: navAnimation;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes navAnimation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }   
+}
+
+@keyframes navAnimation2 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+       
+    }   
+}
+nav{
+    display: flex;
+    position: relative;
+    gap: 150px;
+}
+nav a{
+    position: relative;
+    top: 80px;
+    left: 70%;
+    font-family: 'CustomFont';
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #493628;
+    text-decoration: none;
+    font-weight: normal;
+    transition: 350ms ease-in-out;
+  
+}
+
+nav a:hover{
+    transform: scale(1.2);
+}
+
+.nav1::after{
+    content: '01';
+    position: absolute;
+    color: #285430;
+    font-size: 11px;
+    top: -5px;
+    left: -15px;
+    width: 10px;
+    height: 10px;
+}
+
+.nav2::after{
+    content: '02';
+    position: absolute;
+    color: #285430;
+    font-size: 11px;
+    top: -5px;
+    left: -15px;
+    width: 10px;
+    height: 10px;
+ 
+ }
+
+ .nav3::after{
+    content: '03';
+    position: absolute;
+    color: #285430;
+    font-size: 11px;
+    top: -5px;
+    left: -15px;
+    width: 10px;
+    height: 10px;
+ 
+ }
+
+ .nav4::after{
+    content: '04';
+    position: absolute;
+    color: #285430;
+    font-size: 11px;
+    top: -5px;
+    left: -15px;
+    width: 10px;
+    height: 10px;
+ 
+ }
+
+.loginBttn{
+    position: absolute;
+    left: 2220px;
+    top: 73px;
+    color: white;
+    font-family: 'CustomFont';
+    width: 60px;
+    font-size: 12px;
+    z-index: 1;
+    letter-spacing: 1px;
+    transition: 350ms ease-in-out;
+    
+}
+
+.loginBttn::before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -17px;
+    width: 80px;
+    height: 35px;
+    background-color: #285430;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.loginBttn:hover{
+    transform: scale(1.1);
+}
+ 
+.mainTxt{
+    position: absolute;
+    top: 210px; 
+    left: 25%; 
+    font-family: 'mainFont';
+    color: #E5D9B6;
+    font-size: 180px;
+    line-height: 130px;
+   
+
+    animation-name: maintxtAni;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+
+    
+}
+
+
+@keyframes maintxtAni {
+        from{
+            opacity: 0;
+            top:280px;
+        }
+
+        to{
+            opacity: 1;
+            top: 210px;
+        }
+}
+
+
+
+
+@keyframes maintxtAni2 {
+    from{
+        opacity: 0;
+        top:560px;
+    }
+
+    to{
+        opacity: 1;
+        top: 500px;
+    }
+}
+.subLogo{
+    position: absolute;
+    top: 500px;
+    left: 700px;
+
+    animation-name: maintxtAni2;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+
+.container1{
+    position:absolute;
+    top:100vh;
+    left: 0px;
+    width: 100%;
+    height: 400px;
+    background-color: #285430;
+
+
+    
+}
+
+.text1{
+    position: absolute;
+    top: 60px;
+    left: 30%;
+    font-family: 'CustomFont';
+    color: #E5D9B6;
+    letter-spacing: 0.5px;
+    font-size: 22px;
+
+    animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+
+}
+
+.container2{
+    position: absolute;
+    top: 142.3vh;
+    left: 0px;
+    width: 950px;
+    height: 700px;
+    background-color: #E5D9B6;
+}
+
+.container3{
+    position: absolute;
+    top: 142.3vh;
+    left: 950px;
+    width: 953px;
+    height: 350px;
+    background-color: #A4BE7B;
+}
+
+.container4{
+    position: absolute;
+    top: 179.4vh;
+    left: 950px;
+    width: 476.5px;
+    height: 350px;
+    background-color: #5F8D4E;
+}
+
+.container5{
+    position: absolute;
+    top: 179.4vh;
+    left: 1426px;
+    width: 476.5px;
+    height: 350px;
+    background-color: #285430;
+}
+
+.container6{
+    position: absolute;
+    top: 216.3vh;
+    left: 0px;
+    width: 100%;
+    height: 590px;
+    background-color: white;
+}
+
+.Cont2{
+    font-family: 'CustomFont';
+    letter-spacing: 0.3px;
+    
+    animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.text2{
+    position: relative;
+    top: 500px;
+    left: 30px;
+    color: #285430;
+    font-size: 24px;
+
+    animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.text3{
+    position: absolute;
+    top: 90px;
+    left: 150px;
+    color: #285430;
+    font-size: 19px;
+
+    animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.text4{
+    position: absolute;
+    top: 200px;
+    left: 30px;
+    color: #285430;
+    font-size: 14px;
+}
+
+.text5{
+    position: absolute;
+    top: 180px;
+    left: 35px;
+    color: #E5D9B6;
+    font-size: 14px;
+}
+
+
+.Mheading{
+    position: absolute;
+    top: -90px;
+    left: 50px;
+    font-family: 'MainFont';
+    font-size: 140px;
+}
+
+.Mheading2{
+    position: absolute;
+    top: 170px;
+    left: 65px;
+    font-family: 'CustomFont';
+    font-size: 20px;
+}
+
+.Mheading3{
+    position: absolute;
+    top: 100px;
+    left: 65px;
+    font-family: 'CustomFont';
+    font-size: 120px;
+}
+
+.Mheading4{
+    position: absolute;
+    top: 330px;
+    left: 65px;
+    font-family: 'CustomFont';
+    font-size: 20px;
+}
+
+.Mheading5{
+    position: absolute;
+    top: 330px;
+    left: 65px;
+    font-family: 'LightFont';
+    font-size: 55px;
+}
+
+
+.Mheading6{
+    position: absolute;
+    top: 500px;
+    left: 65px;
+    font-family: 'CustomFont';
+    font-size: 20px;
+}
+
+.pic4{
+    position: absolute;
+    left: 0px;
+    top:216.3vh;
+}
+
+.Aaddtxt1{
+    position: absolute;
+    top: 225.3vh;;
+    left: 37%;
+    font-family: 'mainfont';
+    color: #E5D9B6;
+    font-size: 70px;
+
+    animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.Aaddtxt2{
+    position: absolute;
+    top: 240.3vh;;
+    left: 22%;
+    font-family: 'LightFont';
+    color: #E5D9B6;
+    font-size: 20px;
+    text-align: center;
+    width: 1000px;
+    animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+
+.container7{
+    position: absolute;
+    top: 2545px;
+    left: 0px;
+    width: 1903px;
+    height: 1300px;
+
+    background-color: white;
+
+    animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+
+.pic5{
+    position: absolute;
+    top: 100px;
+    left: 15%;
+}
+
+
+.pic5txt1{
+    position: absolute;
+    top: 100px;
+    left: 840px;
+    font-family: 'CustomFont';
+    width: 550px;
+    font-size: 25px;
+
+    font-style: italic;
+    color: #285430;
+
+}
+
+.pic6{
+    position: absolute;
+    top: 300px;
+    left: 1100px;
+}
+
+.cont7txt1{
+    position: absolute;
+    top: 490px;
+    left: 1050px;
+    font-family: 'LightFont';
+    width: 450px;
+    font-size: 17px;
+    text-align: right;
+
+    font-style: italic;
+    color: black;
+    letter-spacing: 0.4px;
+
+
+}
+
+.pic7{
+    position: absolute;
+    top: 630px;
+    left: 800px;
+
+    animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.cont7txt2{
+    position: absolute;
+    top: 640px;
+    left: 1130px;
+    font-family: 'LightFont';
+    width: 250px;
+    font-size: 14px;
+    text-align: left;
+
+    color: black;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    line-height: 16px;
+
+
+    animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+
+}
+
+.pic8{
+    position: absolute;
+    top: 1030px;
+    left: 500px;
+
+    animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.cont7txt3{
+    position: absolute;
+    top: 910px;
+    left: 580px;
+    font-family: 'CustomFont';
+    width: 560px;
+    font-size: 20px;
+    text-align: center;
+
+    color: #285430;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    line-height: 16px;
+
+    animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+
+}
+
+.pic9{
+    position: absolute;
+    top: 3210px;
+    left: 80px;
+
+    animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+
+.pic10{
+    position: absolute;
+    top: 100px;
+    left: -40px;
+    background-size: cover;
+    width: 120%;
+
+    opacity: 0.05;
+
+    animation-name: none;
+
+}
+
+
+
+
+.container8{
+    position: absolute;
+    top: 4010px;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+
+    background-color: #285430;
+}
+
+
+.maintxt21{
+    position: absolute;
+    left: 15%;
+    font-family: 'CustomFont';
+    color: white;
+    font-size: 14px;
+}
+
+.maintxt22{
+    position: absolute;
+    left: 70%;
+    font-family: 'CustomFont';
+    color: white;
+    font-size: 14px;
+}
+
+
+
+/* Imported Fonts */
+@font-face {
+    font-family: 'CustomFont';
+    src: url(NeueMontreal-Medium.otf);
+}
+
+@font-face {
+    font-family: 'LightFont';
+    src: url(NeueMontreal-Regular.otf);
+}
+
+@font-face {
+    font-family: 'mainFont';
+    src: url(Akira\ Expanded\ Demo.otf);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.accountMain{
+    width: 80px;
+    height: 35px;
+    position: absolute;
+    left: 110%;
+    top: 70px;
+
+    background-color: none;
+
+    border: 2px solid #285430;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    
+}
+
+
+
+.userbttn{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    width: 25px;
+
+}
+
+.mainAcountCont{
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    height: 200px;
+    width: 250px;
+    background-color: white;
+    z-index: 2;
+    border-radius: 10px;
+
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    
+    transform: scale(0);
+    opacity: 0;
+
+    transition: 300ms ease;
+}
+
+
+.mainAcountCont.active{
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+
+.mainAccountContpic1{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 20%;
+    clip-path: circle(50%);
+
+}
+
+.mainAccTxt1{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    font-family: 'CustomFont';
+    font-size: 13px;
+
+}
+
+.mainAccountContpic2{
+    position: absolute;
+    top: 8%;
+    left: 70%;
+    width: 15%;
+
+}
+
+.mainaccountbttn1{
+    position: absolute;
+    font-size: 17px;
+    top: 70%;
+    left: 33%;
+    font-family: 'CustomFont';
+    background-color: #F8F8F8;
+    color: black;
+    border: none;
+
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+.Confirmation{
+    position: absolute;
+    top: 105%;
+    left: -10%;
+    background-color: white;
+    height: 100px;
+    width: 300px;
+    border-radius: 5px;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+    transform: scale(0);
+    opacity: 0;
+
+    transition: 300ms ease;
+}
+
+.Confirmation.active{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.confirmationtxt1{
+    position: absolute;
+    left: 12%;
+    font-family: 'CustomFont';
+}
+
+.confirmbttn1{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    color: white;
+    font-family: 'CustomFont';
+    font-size: 15px;
+    background-color: #285430;
+    height: 30px;
+
+    border-radius: 5px;
+    border: none;
+
+    cursor: pointer;
+
+}
+
+.confirmbttn2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-family: 'CustomFont';
+    font-size: 15px;
+    background-color: #285430;
+    height: 30px;
+
+    border-radius: 5px;
+    border: none;
+
+    cursor: pointer;
+
+}
+
+.accountExit{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    background-color: white;
+
+    border: none;
+}

@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="Stylesheet" href="menu(Guest).css">
+        <title>Coffee Corner</title>
+        <link rel="Icon" href="Main Logo.png">
+    </head>
+    <body>
+        <img src="MenuBackground.png" class="MainBg">
+
+        <div class="header">
+                    
+        </div>
+
+            <div class="navContainer">
+                
+                    <nav class="navigator1">
+                        <a href="./Main.html" class="nav1">Home</a>
+                        <a href="./About.html" class="nav2">About Us</a>
+                        <a href="./Contact.html" class="nav3">Contact</a>
+                        <a href="./Menu(Guest).html" class="nav4">Menu</a>    
+                    </nav>
+                    <img src="MainLogoColoredInverted.png" width="100px" class="mainLogoClass">
+                    <a href="#" onclick="labas()"><h1 class="loginBttn">LOG IN</h1></a>
+
+                        <script>
+                            function accounContOpen(){
+                            const mainAcountCont = document.getElementById("mainAcountCont");
+                            mainAcountCont.classList.add("active");
+
+                        }
+
+                        function accounContClose(){
+                            const mainAcountCont = document.getElementById("mainAcountCont");
+                            mainAcountCont.classList.remove("active");
+
+                        }
+                        </script>
+            </div>
+
+
+                        <div class="mainAcountCont" id="mainAcountCont">
+                            <button onclick="accounContClose()" class="accountExit"><img src="reject.png" width="20" ></button>
+                            <img src="MainLogoColoredInverted.png" class="mainAccountContpic2">
+                            <img src="AHAHHAHA.JPG" class="mainAccountContpic1">
+                            <p class="mainAccTxt1"> John Michael Santos</p>
+                            <button class="mainaccountbttn1" onclick="ConfirmationOpen()">LOG OUT</button>
+
+                            <div class="Confirmation" id="Confirmation">
+                                <p class="confirmationtxt1">Are you sure you want to log out?</p>
+                                <a href="./Main.html"><button class="confirmbttn1" >YES</button></a>
+                                <button class="confirmbttn2" onclick="ConfirmationClose()">CANCEL</button>
+                            </div>
+                            <script>
+
+
+                                function ConfirmationOpen(){
+                                const Confirmation = document.getElementById("Confirmation");
+                                Confirmation.classList.add("active");
+
+                            }
+
+
+                            function ConfirmationClose(){
+                                const Confirmation = document.getElementById("Confirmation");
+                                Confirmation.classList.remove("active");
+
+                            }
+                            </script>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <h1 class="mainTxt">COFFEE<br>CORNER</h1>
+            <img src="Main Logo2.png" width="550px" class="subLogo">
+
+        
+        <div class="header2">
+            <nav class="navi2">
+                <a href="#" class="navi navi1">HOT COFFEE</a>
+                <a href="#" class="navi navi2">ICED COFFEE</a>
+                <a href="#" class="navi navi3">FRAPPE</a>
+                <a href="#" class="navi navi4">PASTRIES</a>
+            </nav>
+        </div>
+
+        <section class="mainmenu">
+            <img src="MainLogoColoredInverted.png" width="90px" class="mainlogopic1">
+            <img src="GreenBackgroundBlur.png" class="green" >
+            <p class="menutxt1">OTHERS</p>
+                <div class="productContainer">
+                    <div class="products">
+                        <img src="Cappuccino.webp" width="400px" id="item1" class="product1" data-description="Cappuccino - A classic coffee.">
+                        <img src="LatteMachiato.webp" width="400px" id="item2" class="productSelector2" data-description="Latte Macchiato - Smooth and creamy.">
+                        <img src="CaramelCoffee.webp" width="400px" id="item3" class="product3">
+                        <img src="Mocha.webp" width="400px" id="item4" class="product4">
+                        <img src="BlackCoffee.webp" width="400px" id="item5" class="product5">
+                        <img src="WhiteCaramel.webp" width="400px" id="item6" class="product6 " data-description="White Caramel - A sweet twist.">
+
+                    </div>   
+                </div>
+                
+                                    <div class="sampletxt1">
+                                        <p>Mocha<br>Latte</p>
+                                        <p class="prod1addtxt3">A mocha latte is a rich and indulgent coffee drink that combines espresso, steamed milk, and chocolate syrup. Topped with a layer of whipped cream and often garnished with chocolate shavings or cocoa powder</p>
+                                        <p class="sampletxt1addtxt1">INGREDIENTS<br><br><br><br></p>
+                                        <div class="ingre1">
+                                            <input type="checkbox" disabled class="checkbox1"> Caramel 
+                                            <input type="checkbox" checked  disabled class="checkbox1"> Milk
+                                            <input type="checkbox" disabled class="checkbox1"> Vanila Extract
+                                            <input type="checkbox" checked  disabled class="checkbox1"> Cocoa Powder<br>
+                                            <input type="checkbox" disabled class="checkbox1"> Cinnamon
+                                            <input type="checkbox" disabled class="checkbox1"> Cream
+                                            <input type="checkbox" disabled class="checkbox1"> Whipped Cream
+                                            <input type="checkbox" disabled class="checkbox1"> Caramel Syrup<br>
+                                            <input type="checkbox" checked  disabled class="checkbox1"> Almond Milk
+
+                                            <p class="prod1addtxt1">P99</p>
+                                            <p class="prod1addtxt2">P89</p>
+                                            <button class="buyProd1" onclick="labas()">
+                                                <div >
+                                                    <img src="cart.png" width="30px" class="cartpic1">
+                                                    <p class="cart1">Buy Now</p>
+                                            </div>
+                                            </button>
+
+                                            <div class="prodOut1" id="prodOut1">
+                                                    <div class="GreenProd1">
+                                                        
+                                                    </div>
+                                                    <img src="MainLogoColoredInverted.png" width="70px" class="GreenProd1pic">
+                                                    <img src="Cappuccino.webp" class="prod1Outadd1">
+                                                    <p class="prod1Outadd2">ORDER DETAILS</p>
+                                                    <p class="prod1Outadd3">Mocha Latte</p>
+                                                    <p class="prod1Outadd4">P89</p>
+                                                    <p class="prod1Outadd5">Price: </p>
+                                                    <p class="prod1Outadd6">Quantity: </p>
+                                                    <p class="prod1Outadd16">Total: </p>
+                                                    <input type="number" class="prod1Outadd7" value="1" required>
+                                                    <p class="prod1Outadd8">BUYER DETAILS</p>
+                                                    <form>
+                                                    <P class="prod1Outadd9">Name</P>
+                                                    <input type="text" class="prod1Outadd10">
+                                                    <P class="prod1Outadd11">Address</P>
+                                                    <input type="text" class="prod1Outadd12">
+                                                    <P class="prod1Outadd13">Payment</P>
+                                                    <input type="text" class="prod1Outadd14">
+                                                    <input type="submit" class="prod1Outadd15" value="Place Order" onclick="calculateTotal1()">
+                                                    </form>
+                                                    <button class="prod1Exit" onclick="prod1Close()"> <img src="reject.png" width="20px"></button>
+                                                    <p class="prod1Outadd17">P89</p>
+
+                                                    <script>
+
+                                                    function product1Labas() {
+                                                        const prodOut1 = document.getElementById("prodOut1");
+                                                        prodOut1.classList.add("active1");
+                                                        prodOut1.classList.remove("inactive1");
+                                                    }
+
+                                                    function prod1Close() {
+                                                        const prodOut1 = document.getElementById("prodOut1");
+                                                        prodOut1.classList.add("inactive1");
+                                                        prodOut1.classList.remove("active1");
+                                                    }
+                                                    function clear1() {
+                                                        const nameInput = document.querySelector('.prod1Outadd10');
+                                                        const addressInput = document.querySelector('.prod1Outadd12');
+
+                                                        document.querySelector('.prod1Outadd7').value = 1; // Reset quantity
+                                                        nameInput.value = ''; // Clear name
+                                                        addressInput.value = ''; // Clear address
+                                                        document.querySelector('.prod1Outadd14').value = ''; // Clear payment
+                                                        document.querySelector('.prod1Outadd17').textContent = 'P89'; // Reset total display
+                                                    }    
+                                                    
+                                                    function completeOrder(){
+                                                        const completedDiv = document.getElementById("completed");
+                                                                    completedDiv.classList.add("active");
+
+                                                                    // Hide the completed div after 3 seconds
+                                                                    setTimeout(() => {
+                                                                        completedDiv.classList.remove("active");
+                                                                    }, 3000);
+                                                    }
+                                                        
+                                                     document.querySelector('.prod1Outadd7').addEventListener('change', () => {
+                                                            const price = 89;
+                                                            const quantityInput = document.querySelector('.prod1Outadd7');
+                                                            const totalElement = document.querySelector('.prod1Outadd17');
+
+                                                            const quantity = parseInt(quantityInput.value) || 0;
+                                                            const total = price * quantity;
+                                                        
+                                                            // Update the total price in prodOutadd17
+                                                            totalElement.textContent = `P${total}`;
+                                                        });
+
+
+                                                        function calculateTotal1() {
+                                                                event.preventDefault();
+                                                                const nameInput = document.querySelector('.prod1Outadd10');
+                                                                const addressInput = document.querySelector('.prod1Outadd12');
+
+                                                                // Validation for Name and Address
+                                                                if (!nameInput.value.trim()) {
+                                                                    alert("Please enter your Name.");
+                                                                    nameInput.focus(); // Set focus back to name input
+                                                                    return; // Prevent submission
+                                                                }
+
+                                                                if (!addressInput.value.trim()) {
+                                                                    alert("Please enter your Address.");
+                                                                    addressInput.focus(); // Set focus back to address input
+                                                                    return; // Prevent submission
+                                                                }
+
+                                                                const totalElement = document.querySelector('.prod1Outadd17');
+                                                                const total = parseFloat(totalElement.textContent.replace('P', '')) || 0;
+                                                                const payment = parseFloat(document.querySelector('.prod1Outadd14').value) || 0;
+                                                                const change = payment - total;
+
+                                                                if (change >= 0) {
+                                                                    alert(
+                                                                        `Thank you for purchasing in Coffee Corner!
+Total: P${total}
+Payment: P${payment}
+Change: P${change}`
+                                                                    );
+
+                                                                    // Call the clear function to reset the fields
+                                                                    completeOrder();
+                                                                    clear1();
+                                                                    prod1Close();
+                                                                } else {
+                                                                    alert(`Insufficient payment. You need an additional P${Math.abs(change)}.`);
+                                                                }
+                                                            }
+                                                    </script>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+                                    <div class="sampletxt2">
+                                        
+                                        <p class="prod2maintxt">Macchiato</p>
+                                        <p class="prod2addtxt3">A macchiato is an espresso-based coffee drink, typically made with a shot of espresso "stained" or "marked" with a small amount of steamed milk or milk foam. This creates a bold, rich coffee flavor with just a hint of creaminess. </p>
+                                        <p class="sampletxt2addtxt1">INGREDIENTS<br><br><br><br></p>
+                                        <div class="ingre2">
+                                            <input type="checkbox" disabled class="checkbox2"> Caramel 
+                                            <input type="checkbox" checked  disabled class="checkbox2"> Milk
+                                            <input type="checkbox" disabled class="checkbox1"> Vanila Extract
+                                            <input type="checkbox" disabled class="checkbox2"> Cocoa Powder<br>
+                                            <input type="checkbox" disabled class="checkbox2"> Cinnamon
+                                            <input type="checkbox" disabled class="checkbox2"> Cream
+                                            <input type="checkbox" disabled class="checkbox2"> Whipped Cream
+                                            <input type="checkbox" disabled class="checkbox2"> Caramel Syrup<br>
+                                            <input type="checkbox" checked  disabled class="checkbox2"> Almond Milk
+
+                                            <p class="prod2addtxt1">P99</p>
+                                            <p class="prod2addtxt2">P89</p>
+                                            <button class="buyProd2" onclick="labas()">
+                                                <div >
+                                                    <img src="cart.png" width="30px" class="cartpic2">
+                                                    <p class="cart2">Buy Now</p>
+                                            </div>
+                                            </button>
+
+                                            <div class="prodOut2" id="prodOut2">
+                                                <div class="GreenProd1">
+                                                        
+                                                </div>
+                                                <img src="MainLogoColoredInverted.png" width="70px" class="GreenProd1pic">
+                                                <img src="newBackground.png " class="checkoutBg">
+                                                    <img src="LatteMachiato.webp" class="prod2Outadd1">
+                                                    <p class="prod2Outadd2">ORDER DETAILS</p>
+                                                    <p class="prod2Outadd3">Macchiato</p>
+                                                    <p class="prod2Outadd4">P89</p>
+                                                    <p class="prod2Outadd5">Price: </p>
+                                                    <p class="prod2Outadd6">Quantity: </p>
+                                                    <p class="prod2Outadd16">Total: </p>
+                                                    <input type="number" class="prod2Outadd7" value="1" required>
+                                                    <p class="prod2Outadd8">BUYER DETAILS</p>
+                                                    <form>
+                                                    <P class="prod2Outadd9">Name</P>
+                                                    <input type="text" class="prod2Outadd10">
+                                                    <P class="prod2Outadd11">Address</P>
+                                                    <input type="text" class="prod2Outadd12">
+                                                    <P class="prod2Outadd13">Payment</P>
+                                                    <input type="text" class="prod2Outadd14">
+                                                    <input type="submit" class="prod2Outadd15" value="Place Order" onclick="calculateTotal2()">
+                                                    </form>
+                                                    <button class="prod2Exit" onclick="prod2Close()"> <img src="reject.png" width="20px"></button>
+                                                    <p class="prod2Outadd17">P89</p>
+
+                                                    <script>
+
+                                                    function labas2() {
+                                                        const prodOut2 = document.getElementById("prodOut2");
+                                                        prodOut2.classList.add("active2");
+                                                        prodOut2.classList.remove("inactive2");
+                                                    }
+
+                                                    function prod2Close() {
+                                                        const prodOut2 = document.getElementById("prodOut2");
+                                                        prodOut2.classList.add("inactive2");
+                                                        prodOut2.classList.remove("active2");
+                                                    }
+                                                    function clear2() {
+                                                        const nameInput = document.querySelector('.prod2Outadd10');
+                                                        const addressInput = document.querySelector('.prod2Outadd12');
+
+                                                        document.querySelector('.prod2Outadd7').value = 1; // Reset quantity
+                                                        nameInput.value = ''; // Clear name
+                                                        addressInput.value = ''; // Clear address
+                                                        document.querySelector('.prod2Outadd14').value = ''; // Clear payment
+                                                        document.querySelector('.prod2Outadd17').textContent = 'P89'; // Reset total display
+                                                    }    
+                                                    
+                                                    function completeOrder(){
+                                                        const completedDiv = document.getElementById("completed");
+                                                                    completedDiv.classList.add("active");
+
+                                                                    // Hide the completed div after 3 seconds
+                                                                    setTimeout(() => {
+                                                                        completedDiv.classList.remove("active");
+                                                                    }, 3000);
+                                                    }
+                                                        
+                                                     document.querySelector('.prod2Outadd7').addEventListener('change', () => {
+                                                            const price = 89;
+                                                            const quantityInput = document.querySelector('.prod2Outadd7');
+                                                            const totalElement = document.querySelector('.prod2Outadd17');
+
+                                                            const quantity = parseInt(quantityInput.value) || 0;
+                                                            const total = price * quantity;
+                                                        
+                                                            // Update the total price in prodOutadd17
+                                                            totalElement.textContent = `P${total}`;
+                                                        });
+
+
+                                                        function calculateTotal2() {
+                                                                event.preventDefault();
+                                                                const nameInput = document.querySelector('.prod2Outadd10');
+                                                                const addressInput = document.querySelector('.prod2Outadd12');
+
+                                                                // Validation for Name and Address
+                                                                if (!nameInput.value.trim()) {
+                                                                    alert("Please enter your Name.");
+                                                                    nameInput.focus(); // Set focus back to name input
+                                                                    return; // Prevent submission
+                                                                }
+
+                                                                if (!addressInput.value.trim()) {
+                                                                    alert("Please enter your Address.");
+                                                                    addressInput.focus(); // Set focus back to address input
+                                                                    return; // Prevent submission
+                                                                }
+
+                                                                const totalElement = document.querySelector('.prod2Outadd17');
+                                                                const total = parseFloat(totalElement.textContent.replace('P', '')) || 0;
+                                                                const payment = parseFloat(document.querySelector('.prod2Outadd14').value) || 0;
+                                                                const change = payment - total;
+
+                                                                if (change >= 0) {
+                                                                    alert(
+                                                                        `Thank you for purchasing in Coffee Corner!
+Total: P${total}
+Payment: P${payment}
+Change: P${change}`
+                                                                    );
+
+                                                                    // Call the clear function to reset the fields
+                                                                    completeOrder();
+                                                                    clear2();
+                                                                    prod2Close();
+                                                                } else {
+                                                                    alert(`Insufficient payment. You need an additional P${Math.abs(change)}.`);
+                                                                }
+                                                            }
+                                                    </script>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="sampletxt3">
+                                                                                    
+                                        <p class="prod3maintxt">Caramel<br>Latte</p>
+                                        <p class="prod3addtxt3">A caramel latte is a creamy, sweet coffee drink made with espresso, steamed milk, and caramel syrup. The rich espresso blends with the smooth, buttery caramel flavor.</p>
+                                        <p class="sampletxt3addtxt1">INGREDIENTS<br><br><br><br></p>
+                                        <div class="ingre3">
+                                            <input type="checkbox" checked disabled class="checkbox3"> Caramel 
+                                            <input type="checkbox" checked  disabled class="checkbox3"> Milk
+                                            <input type="checkbox" disabled class="checkbox3"> Vanila Extract
+                                            <input type="checkbox" disabled class="checkbox3"> Cocoa Powder<br>
+                                            <input type="checkbox" disabled class="checkbox3"> Cinnamon
+                                            <input type="checkbox" disabled class="checkbox3"> Cream
+                                            <input type="checkbox" disabled class="checkbox3"> Whipped Cream
+                                            <input type="checkbox" checked disabled class="checkbox3"> Caramel Syrup<br>
+                                            <input type="checkbox" checked  disabled class="checkbox3"> Almond Milk
+
+                                            <p class="prod3addtxt1">P89</p>
+                                            <p class="prod3addtxt2">P79</p>
+                                            <button class="buyProd3" onclick="labas()">
+                                                <div >
+                                                    <img src="cart.png" width="30px" class="cartpic3">
+                                                    <p class="cart3">Buy Now</p>
+                                            </div>
+                                            </button>
+
+                                            <div class="prodOut3" id="prodOut3">
+                                                <div class="GreenProd3">
+                                                        
+                                                </div>
+                                                <img src="MainLogoColoredInverted.png" width="70px" class="GreenProd3pic">
+                                                <img src="newBackground.png " class="checkoutBg">
+                                                    <img src="CaramelCoffee.webp" class="prod3Outadd1">
+                                                    <p class="prod3Outadd2">ORDER DETAILS</p>
+                                                    <p class="prod3Outadd3">Caramel Latte</p>
+                                                    <p class="prod3Outadd4">P79</p>
+                                                    <p class="prod3Outadd5">Price: </p>
+                                                    <p class="prod3Outadd6">Quantity: </p>
+                                                    <p class="prod3Outadd16">Total: </p>
+                                                    <input type="number" class="prod3Outadd7" value="1" required>
+                                                    <p class="prod3Outadd8">BUYER DETAILS</p>
+                                                    <form>
+                                                    <P class="prod3Outadd9">Name</P>
+                                                    <input type="text" class="prod3Outadd10">
+                                                    <P class="prod3Outadd11">Address</P>
+                                                    <input type="text" class="prod3Outadd12">
+                                                    <P class="prod3Outadd13">Payment</P>
+                                                    <input type="text" class="prod3Outadd14">
+                                                    <input type="submit" class="prod3Outadd15" value="Place Order" onclick="calculateTotal3()">
+                                                    </form>
+                                                    <button class="prod3Exit" onclick="prod3Close()"> <img src="reject.png" width="20px"></button>
+                                                    <p class="prod3Outadd17">P79</p>
+
+                                                    <script>
+
+                                                    function labas3() {
+                                                        const prodOut3 = document.getElementById("prodOut3");
+                                                        prodOut3.classList.add("active3");
+                                                        prodOut3.classList.remove("inactive3");
+                                                    }
+
+                                                    function prod3Close() {
+                                                        const prodOut3 = document.getElementById("prodOut3");
+                                                        prodOut3.classList.add("inactive3");
+                                                        prodOut3.classList.remove("active3");
+                                                    }
+                                                    function clear3() {
+                                                        const nameInput = document.querySelector('.prod3Outadd10');
+                                                        const addressInput = document.querySelector('.prod3Outadd12');
+
+                                                        document.querySelector('.prod3Outadd7').value = 1; // Reset quantity
+                                                        nameInput.value = ''; // Clear name
+                                                        addressInput.value = ''; // Clear address
+                                                        document.querySelector('.prod3Outadd14').value = ''; // Clear payment
+                                                        document.querySelector('.prod3Outadd17').textContent = 'P89'; // Reset total display
+                                                    }    
+                                                    
+                                                    function completeOrder(){
+                                                        const completedDiv = document.getElementById("completed");
+                                                                    completedDiv.classList.add("active");
+
+                                                                    // Hide the completed div after 3 seconds
+                                                                    setTimeout(() => {
+                                                                        completedDiv.classList.remove("active");
+                                                                    }, 3000);
+                                                    }
+                                                        
+                                                     document.querySelector('.prod3Outadd7').addEventListener('change', () => {
+                                                            const price = 79;
+                                                            const quantityInput = document.querySelector('.prod3Outadd7');
+                                                            const totalElement = document.querySelector('.prod3Outadd17');
+
+                                                            const quantity = parseInt(quantityInput.value) || 0;
+                                                            const total = price * quantity;
+                                                        
+                                                            // Update the total price in prodOutadd17
+                                                            totalElement.textContent = `P${total}`;
+                                                        });
+
+
+                                                        function calculateTotal3() {
+                                                                 event.preventDefault();
+                                                                const nameInput = document.querySelector('.prod3Outadd10');
+                                                                const addressInput = document.querySelector('.prod3Outadd12');
+
+                                                                // Validation for Name and Address
+                                                                if (!nameInput.value.trim()) {
+                                                                    alert("Please enter your Name.");
+                                                                    nameInput.focus(); // Set focus back to name input
+                                                                    return; // Prevent submission
+                                                                }
+
+                                                                if (!addressInput.value.trim()) {
+                                                                    alert("Please enter your Address.");
+                                                                    addressInput.focus(); // Set focus back to address input
+                                                                    return; // Prevent submission
+                                                                }
+
+                                                                const totalElement = document.querySelector('.prod3Outadd17');
+                                                                const total = parseFloat(totalElement.textContent.replace('P', '')) || 0;
+                                                                const payment = parseFloat(document.querySelector('.prod3Outadd14').value) || 0;
+                                                                const change = payment - total;
+
+                                                                if (change >= 0) {
+                                                                    alert(
+                                                                        `Thank you for purchasing in Coffee Corner!
+Total: P${total}
+Payment: P${payment}
+Change: P${change}`
+                                                                    );
+
+                                                                    // Call the clear function to reset the fields
+                                                                    completeOrder();
+                                                                    clear3();
+                                                                    prod3Close();
+                                                                } else {
+                                                                    alert(`Insufficient payment. You need an additional P${Math.abs(change)}.`);
+                                                                }
+                                                            }
+                                                    </script>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                    <div class="sampletxt4">
+                                        
+
+                                                                                       
+                                        <p class="prod4maintxt">Capuccino</p>
+                                        <p class="prod4addtxt3">A cappuccino is a classic Italian coffee drink made with equal parts espresso, steamed milk, and milk foam. This creates a rich, velvety texture with a strong coffee flavor, topped with a thick layer of frothy foam.</p>
+                                        <p class="sampletxt4addtxt1">INGREDIENTS<br><br><br><br></p>
+                                        <div class="ingre4">
+                                            <input type="checkbox" disabled class="checkbox4"> Caramel 
+                                            <input type="checkbox" checked  disabled class="checkbox4"> Milk
+                                            <input type="checkbox" disabled class="checkbox4"> Vanila Extract
+                                            <input type="checkbox" disabled class="checkbox4"> Cocoa Powder<br>
+                                            <input type="checkbox" disabled class="checkbox4"> Cinnamon
+                                            <input type="checkbox" checked disabled class="checkbox4"> Foam
+                                            <input type="checkbox" disabled class="checkbox4"> Whipped Cream
+                                            <input type="checkbox" disabled class="checkbox4"> Caramel Syrup<br>
+                                            <input type="checkbox" disabled class="checkbox4"> Almond Milk
+
+                                            <p class="prod4addtxt1">P109</p>
+                                            <p class="prod4addtxt2">P99</p>
+                                            <button class="buyProd4" onclick="labas()">
+                                                <div >
+                                                    <img src="cart.png" width="30px" class="cartpic4">
+                                                    <p class="cart4">Buy Now</p>
+                                            </div>
+                                            </button>
+
+                                            <div class="prodOut4" id="prodOut4">
+                                                <div class="GreenProd4">
+                                                        
+                                                </div>
+                                                <img src="MainLogoColoredInverted.png" width="70px" class="GreenProd4pic">
+                                                <img src="newBackground.png " class="checkoutBg">
+                                                    <img src="Mocha.webp" class="prod4Outadd1">
+                                                    <p class="prod4Outadd2">ORDER DETAILS</p>
+                                                    <p class="prod4Outadd3">Capuccino</p>
+                                                    <p class="prod4Outadd4">P99</p>
+                                                    <p class="prod4Outadd5">Price: </p>
+                                                    <p class="prod4Outadd6">Quantity: </p>
+                                                    <p class="prod4Outadd16">Total: </p>
+                                                    <input type="number" class="prod4Outadd7" value="1" required>
+                                                    <p class="prod4Outadd8">BUYER DETAILS</p>
+                                                    <form>
+                                                    <P class="prod4Outadd9">Name</P>
+                                                    <input type="text" class="prod4Outadd10">
+                                                    <P class="prod4Outadd11">Address</P>
+                                                    <input type="text" class="prod4Outadd12">
+                                                    <P class="prod4Outadd13">Payment</P>
+                                                    <input type="text" class="prod4Outadd14">
+                                                    <input type="submit" class="prod4Outadd15" value="Place Order" onclick="calculateTotal4()">
+                                                    </form>
+                                                    <button class="prod4Exit" onclick="prod4Close()"> <img src="reject.png" width="20px"></button>
+                                                    <p class="prod4Outadd17">P99</p>
+
+                                                    <script>
+
+                                                    function labas4() {
+                                                        const prodOut4 = document.getElementById("prodOut4");
+                                                        prodOut4.classList.add("active4");
+                                                        prodOut3.classList.remove("inactive4");
+                                                    }
+
+                                                    function prod4Close() {
+                                                        const prodOut4 = document.getElementById("prodOut4");
+                                                        prodOut4.classList.add("inactive4");
+                                                        prodOut4.classList.remove("active4");
+                                                    }
+                                                    function clear4() {
+                                                        const nameInput = document.querySelector('.prod4Outadd10');
+                                                        const addressInput = document.querySelector('.prod4Outadd12');
+
+                                                        document.querySelector('.prod4Outadd7').value = 1; // Reset quantity
+                                                        nameInput.value = ''; // Clear name
+                                                        addressInput.value = ''; // Clear address
+                                                        document.querySelector('.prod4Outadd14').value = ''; // Clear payment
+                                                        document.querySelector('.prod4Outadd17').textContent = 'P89'; // Reset total display
+                                                    }    
+                                                    
+                                                    function completeOrder(){
+                                                        const completedDiv = document.getElementById("completed");
+                                                                    completedDiv.classList.add("active");
+
+                                                                    // Hide the completed div after 3 seconds
+                                                                    setTimeout(() => {
+                                                                        completedDiv.classList.remove("active");
+                                                                    }, 3000);
+                                                    }
+                                                        
+                                                     document.querySelector('.prod4Outadd7').addEventListener('change', () => {
+                                                            const price = 99;
+                                                            const quantityInput = document.querySelector('.prod4Outadd7');
+                                                            const totalElement = document.querySelector('.prod4Outadd17');
+
+                                                            const quantity = parseInt(quantityInput.value) || 0;
+                                                            const total = price * quantity;
+                                                        
+                                                            // Update the total price in prodOutadd17
+                                                            totalElement.textContent = `P${total}`;
+                                                        });
+
+
+                                                        function calculateTotal4() {
+                                                                event.preventDefault();
+                                                                const nameInput = document.querySelector('.prod4Outadd10');
+                                                                const addressInput = document.querySelector('.prod4Outadd12');
+
+                                                                // Validation for Name and Address
+                                                                if (!nameInput.value.trim()) {
+                                                                    alert("Please enter your Name.");
+                                                                    nameInput.focus(); // Set focus back to name input
+                                                                    return; // Prevent submission
+                                                                }
+
+                                                                if (!addressInput.value.trim()) {
+                                                                    alert("Please enter your Address.");
+                                                                    addressInput.focus(); // Set focus back to address input
+                                                                    return; // Prevent submission
+                                                                }
+
+                                                                const totalElement = document.querySelector('.prod4Outadd17');
+                                                                const total = parseFloat(totalElement.textContent.replace('P', '')) || 0;
+                                                                const payment = parseFloat(document.querySelector('.prod4Outadd14').value) || 0;
+                                                                const change = payment - total;
+
+                                                                if (change >= 0) {
+                                                                    alert(
+                                                                        `Thank you for purchasing in Coffee Corner!
+Total: P${total}
+Payment: P${payment}
+Change: P${change}`
+                                                                    );
+
+                                                                    // Call the clear function to reset the fields
+                                                                    completeOrder();
+                                                                    clear4();
+                                                                    prod4Close();
+                                                                } else {
+                                                                    alert(`Insufficient payment. You need an additional P${Math.abs(change)}.`);
+                                                                }
+                                                            }
+                                                    </script>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+                                    <div class="sampletxt5">
+                                            
+
+                                                                                       
+                                        <p class="prod5maintxt">Americano</p>
+                                        <p class="prod5addtxt3">An Americano is a simple yet bold coffee drink made by diluting a shot (or two) of espresso with hot water. This creates a smooth, rich coffee that’s lighter in body than an espresso but still has a strong, robust flavor. </p>
+                                        <p class="sampletxt5addtxt1">INGREDIENTS<br><br><br><br></p>
+                                        <div class="ingre5">
+                                            <input type="checkbox" disabled class="checkbox5"> Caramel 
+                                            <input type="checkbox" checked  disabled class="checkbox5"> Milk
+                                            <input type="checkbox" disabled class="checkbox5"> Vanila Extract
+                                            <input type="checkbox" disabled class="checkbox5"> Cocoa Powder<br>
+                                            <input type="checkbox" disabled class="checkbox5"> Cinnamon
+                                            <input type="checkbox" checked disabled class="checkbox5"> Extra Shot
+                                            <input type="checkbox" disabled class="checkbox5"> Whipped Cream
+                                            <input type="checkbox" disabled class="checkbox5"> Caramel Syrup<br>
+                                            <input type="checkbox" disabled class="checkbox5"> Almond Milk
+
+                                            <p class="prod5addtxt1">P109</p>
+                                            <p class="prod5addtxt2">P99</p>
+                                            <button class="buyProd5" onclick="labas()">
+                                                <div >
+                                                    <img src="cart.png" width="30px" class="cartpic5">
+                                                    <p class="cart5">Buy Now</p>
+                                            </div>
+                                            </button>
+
+                                            <div class="prodOut5" id="prodOut5">
+                                                <div class="GreenProd5">
+                                                        
+                                                </div>
+                                                <img src="MainLogoColoredInverted.png" width="70px" class="GreenProd5pic">
+                                                <img src="newBackground.png " class="checkoutBg">
+                                                    <img src="BlackCoffee.webp" class="prod5Outadd1">
+                                                    <p class="prod5Outadd2">ORDER DETAILS</p>
+                                                    <p class="prod5Outadd3">Americano</p>
+                                                    <p class="prod5Outadd4">P99</p>
+                                                    <p class="prod5Outadd5">Price: </p>
+                                                    <p class="prod5Outadd6">Quantity: </p>
+                                                    <p class="prod5Outadd16">Total: </p>
+                                                    <input type="number" class="prod5Outadd7" value="1" required>
+                                                    <p class="prod5Outadd8">BUYER DETAILS</p>
+                                                    <form>
+                                                    <P class="prod5Outadd9">Name</P>
+                                                    <input type="text" class="prod5Outadd10">
+                                                    <P class="prod5Outadd11">Address</P>
+                                                    <input type="text" class="prod5Outadd12">
+                                                    <P class="prod5Outadd13">Payment</P>
+                                                    <input type="text" class="prod5Outadd14">
+                                                    <input type="submit" class="prod5Outadd15" value="Place Order" onclick="calculateTotal5()">
+                                                    </form>
+                                                    <button class="prod5Exit" onclick="prod5Close()"> <img src="reject.png" width="20px"></button>
+                                                    <p class="prod5Outadd17">P99</p>
+
+                                                    <script>
+
+                                                    function labas5() {
+                                                        const prodOut5 = document.getElementById("prodOut5");
+                                                        prodOut5.classList.add("active5");
+                                                        prodOut5.classList.remove("inactive5");
+                                                    }
+
+                                                    function prod5Close() {
+                                                        const prodOut5 = document.getElementById("prodOut5");
+                                                        prodOut5.classList.add("inactive5");
+                                                        prodOut5.classList.remove("active5");
+                                                    }
+                                                    function clear5() {
+                                                        const nameInput = document.querySelector('.prod5Outadd10');
+                                                        const addressInput = document.querySelector('.prod5Outadd12');
+
+                                                        document.querySelector('.prod5Outadd7').value = 1; // Reset quantity
+                                                        nameInput.value = ''; // Clear name
+                                                        addressInput.value = ''; // Clear address
+                                                        document.querySelector('.prod5Outadd14').value = ''; // Clear payment
+                                                        document.querySelector('.prod5Outadd17').textContent = 'P89'; // Reset total display
+                                                    }    
+                                                    
+                                                    function completeOrder(){
+                                                        const completedDiv = document.getElementById("completed");
+                                                                    completedDiv.classList.add("active");
+
+                                                                    // Hide the completed div after 3 seconds
+                                                                    setTimeout(() => {
+                                                                        completedDiv.classList.remove("active");
+                                                                    }, 3000);
+                                                    }
+                                                        
+                                                     document.querySelector('.prod5Outadd7').addEventListener('change', () => {
+                                                            const price = 99;
+                                                            const quantityInput = document.querySelector('.prod5Outadd7');
+                                                            const totalElement = document.querySelector('.prod5Outadd17');
+
+                                                            const quantity = parseInt(quantityInput.value) || 0;
+                                                            const total = price * quantity;
+                                                        
+                                                            // Update the total price in prodOutadd17
+                                                            totalElement.textContent = `P${total}`;
+                                                        });
+
+
+                                                        function calculateTotal5() {
+                                                                event.preventDefault();
+                                                                const nameInput = document.querySelector('.prod5Outadd10');
+                                                                const addressInput = document.querySelector('.prod5Outadd12');
+
+                                                                // Validation for Name and Address
+                                                                if (!nameInput.value.trim()) {
+                                                                    alert("Please enter your Name.");
+                                                                    nameInput.focus(); // Set focus back to name input
+                                                                    return; // Prevent submission
+                                                                }
+
+                                                                if (!addressInput.value.trim()) {
+                                                                    alert("Please enter your Address.");
+                                                                    addressInput.focus(); // Set focus back to address input
+                                                                    return; // Prevent submission
+                                                                }
+
+                                                                const totalElement = document.querySelector('.prod5Outadd17');
+                                                                const total = parseFloat(totalElement.textContent.replace('P', '')) || 0;
+                                                                const payment = parseFloat(document.querySelector('.prod5Outadd14').value) || 0;
+                                                                const change = payment - total;
+
+                                                                if (change >= 0) {
+                                                                    alert(
+                                                                        `Thank you for purchasing in Coffee Corner!
+Total: P${total}
+Payment: P${payment}
+Change: P${change}`
+                                                                    );
+
+                                                                    // Call the clear function to reset the fields
+                                                                    completeOrder();
+                                                                    clear5();
+                                                                    prod5Close();
+                                                                } else {
+                                                                    alert(`Insufficient payment. You need an additional P${Math.abs(change)}.`);
+                                                                }
+                                                            }
+                                                    </script>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+
+
+                                    <div class="sampletxt6">
+                                        
+
+                                                                                    
+                                        <p class="prod6maintxt">White<br>Caramel</p>
+                                        <p class="prod6addtxt3">A white caramel is a creamy, sweet coffee drink that combines espresso with steamed milk, white chocolate syrup, and caramel. This blend creates a rich, buttery flavor with notes of vanilla and caramel.</p>
+                                        <p class="sampletxt6addtxt1">INGREDIENTS<br><br><br><br></p>
+                                        <div class="ingre6">
+                                            <input type="checkbox" checked disabled class="checkbox6"> Caramel 
+                                            <input type="checkbox" checked  disabled class="checkbox6"> Milk
+                                            <input type="checkbox" disabled class="checkbox6"> Vanila Extract
+                                            <input type="checkbox" disabled class="checkbox6"> Cocoa Powder<br>
+                                            <input type="checkbox" disabled class="checkbox6"> Cinnamon
+                                            <input type="checkbox" disabled class="checkbox6"> Cream
+                                            <input type="checkbox" disabled class="checkbox6"> Whipped Cream
+                                            <input type="checkbox" checked disabled class="checkbox6"> Caramel Syrup<br>
+                                            <input type="checkbox" checked  disabled class="checkbox6"> Almond Milk
+
+                                            <p class="prod6addtxt1">P139</p>
+                                            <p class="prod6addtxt2">P109</p>
+                                            <button class="buyProd6" onclick="labas()">
+                                                <div >
+                                                    <img src="cart.png" width="30px" class="cartpic6">
+                                                    <p class="cart6">Buy Now</p>
+                                            </div>
+                                            </button>
+
+                                            <div class="prodOut6" id="prodOut6">
+                                                <div class="GreenProd6">
+                                                        
+                                                </div>
+                                                <img src="MainLogoColoredInverted.png" width="70px" class="GreenProd6pic">
+                                                <img src="newBackground.png " class="checkoutBg">
+                                                    <img src="WhiteCaramel.webp" class="prod6Outadd1">
+                                                    <p class="prod6Outadd2">ORDER DETAILS</p>
+                                                    <p class="prod6Outadd3">White Caramel</p>
+                                                    <p class="prod6Outadd4">P109</p>
+                                                    <p class="prod6Outadd5">Price: </p>
+                                                    <p class="prod6Outadd6">Quantity: </p>
+                                                    <p class="prod6Outadd16">Total: </p>
+                                                    <input type="number" class="prod6Outadd7" value="1" required>
+                                                    <p class="prod6Outadd8">BUYER DETAILS</p>
+                                                    <form>
+                                                    <P class="prod6Outadd9">Name</P>
+                                                    <input type="text" class="prod6Outadd10">
+                                                    <P class="prod6Outadd11">Address</P>
+                                                    <input type="text" class="prod6Outadd12">
+                                                    <P class="prod6Outadd13">Payment</P>
+                                                    <input type="text" class="prod6Outadd14">
+                                                    <input type="submit" class="prod6Outadd15" value="Place Order" onclick="calculateTotal6()">
+                                                    </form>
+                                                    <button class="prod6Exit" onclick="prod6Close()"> <img src="reject.png" width="20px"></button>
+                                                    <p class="prod6Outadd17">P109</p>
+
+                                                    <script>
+
+                                                    function labas6() {
+                                                        const prodOut6 = document.getElementById("prodOut6");
+                                                        prodOut6.classList.add("active6");
+                                                        prodOut6.classList.remove("inactive6");
+                                                    }
+
+                                                    function prod6Close() {
+                                                        const prodOut6 = document.getElementById("prodOut6");
+                                                        prodOut6.classList.add("inactive6");
+                                                        prodOut6.classList.remove("active6");
+                                                    }
+                                                    function clear6() {
+                                                        const nameInput = document.querySelector('.prod6Outadd10');
+                                                        const addressInput = document.querySelector('.prod6Outadd12');
+
+                                                        document.querySelector('.prod6Outadd7').value = 1; // Reset quantity
+                                                        nameInput.value = ''; // Clear name
+                                                        addressInput.value = ''; // Clear address
+                                                        document.querySelector('.prod6Outadd14').value = ''; // Clear payment
+                                                        document.querySelector('.prod6Outadd17').textContent = 'P89'; // Reset total display
+                                                    }    
+                                                    
+                                                    function completeOrder(){
+                                                        const completedDiv = document.getElementById("completed");
+                                                                    completedDiv.classList.add("active");
+
+                                                                    // Hide the completed div after 3 seconds
+                                                                    setTimeout(() => {
+                                                                        completedDiv.classList.remove("active");
+                                                                    }, 3000);
+                                                    }
+                                                        
+                                                     document.querySelector('.prod6Outadd7').addEventListener('change', () => {
+                                                            const price = 109;
+                                                            const quantityInput = document.querySelector('.prod6Outadd7');
+                                                            const totalElement = document.querySelector('.prod6Outadd17');
+
+                                                            const quantity = parseInt(quantityInput.value) || 0;
+                                                            const total = price * quantity;
+                                                        
+                                                            // Update the total price in prodOutadd17
+                                                            totalElement.textContent = `P${total}`;
+                                                        });
+
+
+                                                        function calculateTotal6() {
+                                                                event.preventDefault();
+                                                                const nameInput = document.querySelector('.prod6Outadd10');
+                                                                const addressInput = document.querySelector('.prod6Outadd12');
+
+                                                                // Validation for Name and Address
+                                                                if (!nameInput.value.trim()) {
+                                                                    alert("Please enter your Name.");
+                                                                    nameInput.focus(); // Set focus back to name input
+                                                                    return; // Prevent submission
+                                                                }
+
+                                                                if (!addressInput.value.trim()) {
+                                                                    alert("Please enter your Address.");
+                                                                    addressInput.focus(); // Set focus back to address input
+                                                                    return; // Prevent submission
+                                                                }
+
+                                                                const totalElement = document.querySelector('.prod6Outadd17');
+                                                                const total = parseFloat(totalElement.textContent.replace('P', '')) || 0;
+                                                                const payment = parseFloat(document.querySelector('.prod6Outadd14').value) || 0;
+                                                                const change = payment - total;
+
+                                                                if (change >= 0) {
+                                                                    alert(
+                                                                        `Thank you for purchasing in Coffee Corner!
+Total: P${total}
+Payment: P${payment}
+Change: P${change}`
+                                                                    );
+
+                                                                    // Call the clear function to reset the fields
+                                                                    completeOrder();
+                                                                    clear6();
+                                                                    prod6Close();
+                                                                } else {
+                                                                    alert(`Insufficient payment. You need an additional P${Math.abs(change)}.`);
+                                                                }
+                                                            }
+                                                    </script>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                <div class="slider-nav">
+                    <a href="#item1"><img src="Cappuccino.webp" width="50px" class="productSelector1">
+                        <p class="productSelector1txt">Mocha Latte</p>
+                        <p class="productSelector1disc">P99</p>
+                        <p class="productSelector1price">P89</p>
+                    </a>
+                    <a href="#item2"><img src="LatteMachiato.webp" width="50px" class="productSelector2">
+                        <p class="productSelector2txt">Macchiato</p>
+                        <p class="productSelector2disc">P99</p>
+                        <p class="productSelector2price">P89</p>
+                    </a>
+                    <a href="#item3"><img src="CaramelCoffee.webp" width="60px" class="productSelector3">
+                        <p class="productSelector3txt">Caramel Latte</p>
+                        <p class="productSelector3disc">P89</p>
+                        <p class="productSelector3price">P79</p>
+                    </a>
+                    <a href="#item4" id="item4Anchor"><img src="Mocha.webp" width="50px" class="productSelector4">
+                        <p class="productSelector4txt">Capuccino</p>
+                        <p class="productSelector4disc">P109</p>
+                        <p class="productSelector4price">P99</p></a>
+                    </a>
+                    <a href="#item5"><img src="BlackCoffee.webp" width="50px" class="productSelector5">
+                        <p class="productSelector5txt">Americano</p>
+                        <p class="productSelector5disc">P109</p>
+                        <p class="productSelector5price">P99</p></a>
+                    </a>
+                    
+                    <a href="#item6"><img src="WhiteCaramel.webp" width="50px" class="productSelector6">
+                        <p class="productSelector6txt">White Caramel</p>
+                        <p class="productSelector6disc">P139</p>
+                        <p class="productSelector6price">P109</p></a>
+                    </a>
+                </div>
+        </section>
+            <div class="completed" id="completed">
+                <img src="checked.gif" width="70px" class="completedpic">
+                <p class="completedtxt">Order Complete</p>
+            </div>
+
+
+            <div class="Please">
+
+            </div>
+            <script type="text/javascript">
+
+                    function labas(){
+                        alert('Thnkyou!');
+                    }
+                    // Select all anchor tags in the slider-nav
+                    const anchors = document.querySelectorAll('.slider-nav a');
+                    const sampleTxt1 = document.querySelector('.sampletxt1');
+                    const sampleTxt2 = document.querySelector('.sampletxt2');
+                    const sampleTxt3 = document.querySelector('.sampletxt3');
+                    const sampleTxt4 = document.querySelector('.sampletxt4');
+                    const sampleTxt5 = document.querySelector('.sampletxt5');
+                    const sampleTxt6 = document.querySelector('.sampletxt6');
+
+
+                        function activateSampleText1() {
+                            sampleTxt1.classList.add('active1');
+                            sampleTxt2.classList.remove('active2');
+                            sampleTxt3.classList.remove('active3');
+                            sampleTxt4.classList.remove('active4');
+                            sampleTxt5.classList.remove('active5');
+                            sampleTxt6.classList.remove('active6');
+                        }
+
+                        // Function to activate the second sample text and deactivate the others
+                        function activateSampleText2() {
+                            sampleTxt2.classList.add('active2');
+                            sampleTxt1.classList.remove('active1');
+                            sampleTxt3.classList.remove('active3');
+                            sampleTxt4.classList.remove('active4');
+                            sampleTxt5.classList.remove('active5');
+                            sampleTxt6.classList.remove('active6');
+                        }
+
+                        // Function to activate the third sample text and deactivate the others
+                        function activateSampleText3() {
+                            sampleTxt3.classList.add('active3');
+                            sampleTxt1.classList.remove('active1');
+                            sampleTxt2.classList.remove('active2');
+                            sampleTxt4.classList.remove('active4');
+                            sampleTxt5.classList.remove('active5');
+                            sampleTxt6.classList.remove('active6');
+                        }
+
+                        // Function to activate the fourth sample text and deactivate the others
+                        function activateSampleText4() {
+                            sampleTxt4.classList.add('active4');
+                            sampleTxt1.classList.remove('active1');
+                            sampleTxt2.classList.remove('active2');
+                            sampleTxt3.classList.remove('active3');
+                            sampleTxt5.classList.remove('active5');
+                            sampleTxt6.classList.remove('active6');
+                        }
+
+                        // Function to activate the fifth sample text and deactivate the others
+                        function activateSampleText5() {
+                            sampleTxt5.classList.add('active5');
+                            sampleTxt1.classList.remove('active1');
+                            sampleTxt2.classList.remove('active2');
+                            sampleTxt3.classList.remove('active3');
+                            sampleTxt4.classList.remove('active4');
+                            sampleTxt6.classList.remove('active6');
+                        }
+
+                        // Function to activate the sixth sample text and deactivate the others
+                        function activateSampleText6() {
+                            sampleTxt6.classList.add('active6');
+                            sampleTxt1.classList.remove('active1');
+                            sampleTxt2.classList.remove('active2');
+                            sampleTxt3.classList.remove('active3');
+                            sampleTxt4.classList.remove('active4');
+                            sampleTxt5.classList.remove('active5');
+                        }
+
+                        // Index of the anchor you want to select
+                        let index1 = 0;
+                        let index2 = 1;
+                        let index3 = 2;
+                        let index4 = 3;
+                        let index5 = 4;
+                        let index6 = 5;
+
+                        // Index of the anchor you want to be active initially
+                        let initialIndex = 1; // Adjust this index to the desired anchor
+
+                        // Access the initial anchor
+                        let initialAnchor = anchors.item(initialIndex);
+                        if (initialAnchor) {
+                            initialAnchor.classList.add('active'); // Set anchor as active
+                        }
+
+                        // Activate the sample text directly
+                        if (sampleTxt1) {
+                            sampleTxt1.classList.add('active1'); // Add the active class to sampleTxt1
+                        }
+
+                        // Access the anchor at the specified index
+                        let anchor1 = anchors.item(index1);
+                        let anchor2 = anchors.item(index2);
+                        let anchor3 = anchors.item(index3);
+                        let anchor4 = anchors.item(index4);
+                        let anchor5 = anchors.item(index5);
+                        let anchor6 = anchors.item(index6);
+
+                        // Check if each anchor exists, then add its respective event listener
+                        if (anchor1) {
+                            anchor1.addEventListener('click', activateSampleText1); // Add the click event listener
+                        }
+                        if (anchor2) {
+                            anchor2.addEventListener('click', activateSampleText2);
+                        }
+                        if (anchor3) {
+                            anchor3.addEventListener('click', activateSampleText3);
+                        }
+                        if (anchor4) {
+                            anchor4.addEventListener('click', activateSampleText4);
+                        }
+                        if (anchor5) {
+                            anchor5.addEventListener('click', activateSampleText5);
+                        }
+                        if (anchor6) {
+                            anchor6.addEventListener('click', activateSampleText6);
+                        }
+            </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <div class="popup" id="popup">
+                                                <img src="loginPicc.jpg" width="410px" class="loginpic1">
+                                                <p class="loginSideMaintxt">Welcome Back!</p>
+                                                <p class="loginTxtSub">To keep connected with us<br>
+                                                    please login with your<br>
+                                                    current account</p>
+                                                    <p class="addtxt1">Don't have an account?</p>
+                                                <a href="#" onclick="signupLabas()"><p class="signupBttnmain">Sign up</p></a>
+                                                <img src="MainLogoColoredInverted.png" width="50px" class="mainlogologin1">
+                                                <p class="addtxt2">Log in account</p>
+                                                <p class="addtxt3">Log in with</p>
+                                                <a onclick="googleLogin()"><div class="loginwithG">
+                                                    <img src="google.png" width="23px" class="loginwithPic1">
+                                                    <p class="loginwithGtxt">Login with Google</p>
+                                                </div></a>
+                                                <div class="line">
+                                                    
+                                                </div>
+                                                <div class="line2">
+                                                    <p class="addtxt4">Or</p>
+                                                </div>
+
+                                                <p class="cred addtxt5">Username</p>
+                                                <input type="text" class="LoginField" >
+                                                <p class="cred addtxt6">Password</p>
+                                                <input type="password" class="PasswordField">
+                                                <input type="checkbox" class="checkbox1">
+                                                <p class="addtxt7">Remember me</p>
+                                            
+                                                
+
+                                                <a href="./Menu.html"><div class="loginContinue">
+                                                        <p class="addtxt9">Log in</p>
+                                                </div></a>
+
+                                                <a onclick="LoginClose()"><img src="reject.png" width="20px" class="close"></a>
+
+                                                <a href="#"><img src="profile.png" width="25px" class="LoginGuest">
+                                                    <p class="LoginGuest2">Login as a Guest</p>
+                                                </a>
+                                                <p class="addtxt10">This is the day that the Lord has made<br>
+                                                    let us rejoice and be glad in it."</p>
+                                                
+                                                <p class="addtxt11">Psalm 118:24</p>
+                                            </div>
+
+
+
+                                            <div class="loginGoogle" id="loginGoogle">
+                                                <img src="Google_2015_logo.svg.png" width="60px" class="googlepic1">
+                                                <p class="googletxt1">Log in</p>
+                                                <p class="googletxt2">to continue to Coffe Corner</p>
+                                                <p class="googletxt3">Choose an account</p>
+
+                                                <a href="./Main(Login).html"><button class="googlebttn1" href>
+                                                    <img src="AHAHHAHA.JPG" class="googlebttnpic1" width="30">
+
+                                                    <p class="googlebttntxt1">John Michael Santos</p>
+                                                    <P class="googlebttntxt2">johnmichaelsantos340@gmail.com</P>
+
+                                                    
+                                                </button></a>
+
+                                                <a onclick="signupLabas()"><p class="googletxt4">Sign in</p></a>
+
+                                                <button class="googlebttn2" onclick="googleLoginclose()"> Cancel</button>
+                                            </div>
+
+                                            <div class="signupContainer" id="signupContainer">
+                                                <img src="pic5.jpg" class="signupContpic1" width="580px">
+                                                <p class="signupContainertxt1">Sign up</p>
+                                                <p class="signSubtxt1">Sign up with</p>
+                                                <button class="signupContBttn1" onclick="googlesigninopen()">
+                                                    <img src="google.png" width="20" class="signinpic1">
+                                                    <p class="signinaddtxt1">Sign up with Google</p>
+                                                </button>
+                                                <div class="signinline1">
+
+                                                </div>
+
+                                                <div class="signinline2">
+                                                    
+                                                </div>
+                                                <p class="signinaddtxt2">or</p>
+                                                <p class="signinaddtxt3">Email</p>
+                                                <input type="text" class="signinadd1" id="email">
+                                                <p class="signinaddtxt4">Username</p>
+                                                <input type="text" class="signinadd2" id="username">
+                                                <p class="signinaddtxt5">Password</p>
+                                                <input type="password" class="signinadd3" id="password">
+                                                <a href=""><button class="signinadd4" onclick="validateForm(event)">
+                                                    Sign up
+                                                </button></a>
+
+                                                <p class="signinadd5">Already have an account? <a onclick="closeSign()"><strong><u>Log in</u></strong></a></p>
+
+                                                <button class="signinadd6" onclick="signupclose()"><img src="reject.png" width="20px" ></button>
+                                                <p class="signinadd7">Stay Connected!</p>
+                                                <p class="signinadd8">Be part of our journey<br>follow along for the latest insights and news.</p>
+                                            </div>
+
+
+
+                                            <div class="signinCreated" id="signinCreated">
+                                                <img src="checked.gif" width="70px" class="completedpic">
+                                                <p class="completedtxt">Account Created Successfully!</p>
+                                            </div>
+                                            <!-- ////////////////////////////////////////////////////////////////////////////////////// -->
+                                            <div class="googlesignin" id="googlesignin">
+                                                <img src="Google_2015_logo.svg.png" width="60px" class="googlepic1">
+                                                <p class="googletxt1">Sign up</p>
+                                                <p class="googletxt2">to continue to Coffe Corner</p>
+                                                <p class="googletxt3">Choose an account</p>
+
+
+                                                <button class="signinBttn1" onclick="completedSigninGoogle()"> 
+                                                    <img src="person1.png" class="signinbttnpic1" width="30">
+                                                    <p class="signinbttntxt1">Michael John Santos</p>
+                                                    <P class="signinbttntxt2">michaeljohnsantos340@gmail.com</P>
+                                                </button>
+
+                                                <button class="signinBttn2" onclick="completedSigninGoogle()"> 
+                                                    <img src="person2.JPG" class="signinbttnpic1" width="30">
+                                                    <p class="signinbttntxt1">Szanil Gueco mapagmahal</p>
+                                                    <P class="signinbttntxt2">mapagmahal123@gmail.com</P>
+                                                </button>
+
+
+                                                <button class="signinBttn3" onclick="completedSigninGoogle()"> 
+                                                    <img src="person3.jpg" class="signinbttnpic1" width="30">
+                                                    <p class="signinbttntxt1">Leynard batongbakal</p>
+                                                    <P class="signinbttntxt2">leynardbatongbakal@gmail.com</P>
+                                                </button>
+
+
+                                                <a onclick="labasfromSignInGoogle()"><p class="signtxt1">Login in</p></a>
+
+                                                <button class="googlebttn2" onclick="googlesigninclose()"> Cancel</button>
+                                            </div>
+
+                                            <script  type="text/javascript">
+
+                                            function validateForm(event) {
+                                                event.preventDefault(); // Prevents form submission
+                                                const email = document.getElementById('email').value.trim();
+                                                const username = document.getElementById('username').value.trim();
+                                                const password = document.getElementById('password').value.trim();
+
+                                                if (!email || !username || !password) {
+                                                    alert('Please fill out all fields');
+                                                } else {
+                                                    alert('Sign in Successfully!');
+                                                    document.getElementById('email').value = '';
+                                                    document.getElementById('username').value = '';
+                                                    document.getElementById('password').value= '';
+
+                                                    completeOrder();
+                                                
+                                                }
+                                            }
+
+                                            function completeOrder(){
+                                                const signinCreated = document.getElementById("signinCreated");
+                                                signinCreated.classList.add("active");
+
+                                                                                    
+                                                setTimeout(() => {
+                                                signinCreated.classList.remove("active");
+                                                }, 3000);
+                                            }
+                                            function signupLabas(){
+                                                const signupContainer = document.getElementById("signupContainer");
+                                                signupContainer.classList.remove("inactive3");
+                                                signupContainer.classList.add("active3");
+
+                                                LoginClose();
+                                            }
+
+                                            function signupclose(){
+                                                const signupContainer = document.getElementById("signupContainer");
+                                                signupContainer.classList.add("inactive3");
+                                                signupContainer.classList.remove("active3");
+                                            }
+
+                                            function closeSign(event) {
+                                                signupclose()
+                                                labas();
+                                            }
+                                            function googleLogin(){
+                                                const loginGoogle = document.getElementById("loginGoogle");
+                                                loginGoogle.classList.add("activeGoogle");
+                                            }
+
+                                            function googleLoginclose(){
+                                                const loginGoogle = document.getElementById("loginGoogle");
+                                                loginGoogle.classList.remove("activeGoogle");
+                                            }
+
+
+                                            ////////////////////////////////////////////////////////////////////////
+                                            function completedSigninGoogle(){
+                                                completeOrder();
+                                                googlesigninclose();
+                                            }
+                                            function googlesigninopen(){
+                                                const googlesignin = document.getElementById("googlesignin");
+                                                googlesignin.classList.add("activesignin1");
+                                            }
+
+
+                                            function googlesigninclose(){
+                                                const googlesignin = document.getElementById("googlesignin");
+                                                googlesignin.classList.remove("activesignin1");
+                                            }
+
+
+
+
+
+                                            function LoginClose(){
+                                                    const popup = document.getElementById("popup");
+                                                    popup.classList.remove("active");
+                                                    popup.classList.add("inactive");
+                                            }
+
+                                            function labas(){
+                                                const popup = document.getElementById("popup");
+                                                popup.classList.remove("inactive");
+                                                popup.classList.add("active");
+                                            }
+
+
+
+                                                    document.querySelector('.loginContinue').addEventListener('click', function(event) {
+                                                    const username = document.querySelector('.LoginField').value;
+                                                    const password = document.querySelector('.PasswordField').value;
+
+                                                    if (username === 'Michael' && password === '123') {
+                                                        // Successful login, proceed to next page or perform actions
+                                                        window.location.href = "./Menu.html";
+                                                    } else {
+                                                        // Show an error message or handle failed login
+                                                        alert('Incorrect username or password. Please try again.');
+                                                        event.preventDefault(); // Prevents redirection if login fails
+                                                    }
+                                                });
+
+                                                    const loginField = document.querySelector('.LoginField');
+                                                    const passwordField = document.querySelector('.PasswordField');
+
+                                                    // Function to check if input has value and add/remove class
+                                                    function toggleLabelClass(input, labelClass) {
+                                                        if (input.value) {
+                                                        input.classList.add('has-value');
+                                                        } else {
+                                                        input.classList.remove('has-value');
+                                                        }
+                                                    }
+
+                                                    // Add event listeners for input events on both fields
+                                                    loginField.addEventListener('input', function() {
+                                                        toggleLabelClass(loginField, 'has-value');
+                                                    });
+
+                                                    passwordField.addEventListener('input', function() {
+                                                        toggleLabelClass(passwordField, 'has-value');
+                                                    });
+
+                                                    // Trigger on page load in case inputs already have values (like after a form submission)
+                                                    toggleLabelClass(loginField, 'has-value');
+                                                    toggleLabelClass(passwordField, 'has-value');
+                                                        
+                                            </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

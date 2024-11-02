@@ -1,0 +1,1884 @@
+body{
+
+overflow: hidden;
+}
+.MainBg{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+
+    animation-name: backgroundAnimation;
+    animation-duration: 4s;
+}
+
+.header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    box-shadow: rgba(111, 255, 159, .1) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    opacity: 0.50;
+
+    animation-name: navAnimation2;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+
+}
+
+.mainLogoClass{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
+
+
+/* Nav */
+.navContainer{
+    position: absolute;
+    top: -50px;
+    left: -500px;
+    height: 200px;
+    width: 100%;
+
+    animation-name: navAnimation;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes navAnimation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }   
+}
+
+@keyframes navAnimation2 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+       
+    }   
+}
+nav{
+    display: flex;
+    position: relative;
+    gap: 150px;
+}
+nav a{
+    position: relative;
+    top: 80px;
+    left: 70%;
+    font-family: 'CustomFont';
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #493628;
+    text-decoration: none;
+    font-weight: normal;
+    transition: 350ms ease-in-out;
+  
+}
+
+nav a:hover{
+    transform: scale(1.2);
+}
+
+.nav1::after{
+    content: '01';
+    position: absolute;
+    color: #285430;
+    font-size: 11px;
+    top: -5px;
+    left: -15px;
+    width: 10px;
+    height: 10px;
+}
+
+.nav2::after{
+    content: '02';
+    position: absolute;
+    color: #285430;
+    font-size: 11px;
+    top: -5px;
+    left: -15px;
+    width: 10px;
+    height: 10px;
+ 
+ }
+
+ .nav3::after{
+    content: '03';
+    position: absolute;
+    color: #285430;
+    font-size: 11px;
+    top: -5px;
+    left: -15px;
+    width: 10px;
+    height: 10px;
+ 
+ }
+
+ .nav4::after{
+    content: '04';
+    position: absolute;
+    color: #285430;
+    font-size: 11px;
+    top: -5px;
+    left: -15px;
+    width: 10px;
+    height: 10px;
+ 
+ }
+
+.loginBttn{
+    position: absolute;
+    left: 2220px;
+    top: 73px;
+    color: white;
+    font-family: 'CustomFont';
+    width: 60px;
+    font-size: 12px;
+    z-index: 1;
+    letter-spacing: 1px;
+    transition: 350ms ease-in-out;
+    
+}
+
+.loginBttn::before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -17px;
+    width: 80px;
+    height: 35px;
+    background-color: #285430;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.loginBttn:hover{
+    transform: scale(1.1);
+}
+
+.mainTxt{
+    position: absolute;
+    top: 240px;
+    left: 100px;
+    font-family: 'mainFont';
+    color: #285430;
+    line-height: 95px;
+    font-size: 140px;
+
+    animation-name: maintxtSlide;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes maintxtSlide {
+    0%{
+        transform: scale(1.1);
+        opacity: 0.5;
+        left: -30px;
+    }
+    100%{
+        opacity: 1;
+        left: 100px;
+    }
+    
+}
+.subTxt{
+    position: absolute;
+    top: 320px;
+    left: 1220px;
+    font-family: 'CustomFont';
+    color: #493628;
+    font-size: 25px;
+
+    animation-name: subtxtAni;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes subtxtAni {
+    0%{
+        opacity: 0;
+        left: 1300px;
+    }
+    100%{
+        opacity: 1;
+        left: 1220px;
+    }
+}
+
+.orderBttn{
+    position: absolute;
+    top: 550px;
+    left: 1240px;
+    width: 190px;
+    background-color: #285430;
+    z-index: 0;
+    transition: 350ms ease-in-out;
+
+    animation-name: bttnAni;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    
+}
+
+@keyframes bttnAni {
+    0%{
+        opacity: 0;
+        left: 1300px;
+    }
+    100%{
+        opacity: 1;
+        left: 1240px;
+    }
+}
+
+.mainCartIcon{
+    position: absolute;
+    top: 5px;
+    left: 0px;
+}
+.orderBttnTxt{
+    position: absolute;
+    top: -3px;
+    left: 40px;
+    font-family: 'CustomFont';
+    color: white;
+    letter-spacing: 0.4px;
+    font-size: 15px;
+}
+
+.orderBttn:hover{
+    transform: scale(1.1);
+}
+.orderBttn::after{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -15px;
+    width: 167px;
+    height: 45px;
+    background-color: #285430;
+    z-index: -1;
+    border-radius: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+/* MAIN PRODUCT PROPERTIES */
+.pic1{
+    position: absolute;
+    top: 350px;
+    left: 70px;
+    transform: rotate(-25deg);
+    filter: drop-shadow(10px 60px 20px rgba(0, 0, 0, 0.3)) ;
+    
+    animation-name: animation1;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+
+    transition: 800ms ease;
+}
+
+.mainProd{
+    font-family: 'mainFont';
+    color: #285430;
+}
+
+.prod1{
+    position: absolute;
+    top: 180px;
+    left: 220px;
+    width: 140px;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    opacity: 0;
+    transform: scale(1.2);
+    transition: opacity 1s ease;
+}
+
+.pic1:hover{
+    transform: scale(1.2);  
+}
+
+.prod1price{
+    position: absolute;
+    top: 210px;
+    left: 230px;
+    width: 130px;
+    font-family: 'CustomFont';
+    color: #285430;
+    font-size: 13px;
+
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+.prod1desc{
+    position: absolute;
+    top: 250px;
+    left: 230px;
+    width: 130px;
+    font-family: 'CustomFont';
+    color: #285430;
+    font-size: 9px;
+
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.pic1:hover .prod1{
+    transform: scale(1.2);
+    opacity: 1;
+
+    animation-name: sampleAni1;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    
+}
+
+.pic1:hover .prod1desc{
+    opacity: 1;
+
+    animation-name: sampleAni2;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    
+}
+
+.pic1:hover .prod1price{
+    opacity: 1;
+
+    animation-name: sampleAni2;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    
+}
+
+@keyframes sampleAni1{
+    from{
+        position: absolute;
+        left: 120px;
+    }
+    to{
+        position: absolute;
+        left: 220px;
+    }
+}
+
+@keyframes sampleAni2{
+    from{
+        position: absolute;
+        left: 130px;
+    }
+    to{
+        position: absolute;
+        left: 230px;
+    }
+}
+
+
+
+/* PRODUCT2 */
+
+
+.pic2{
+    position: absolute;
+    top: 170px;
+    left: 980px;
+    transform: rotate(20deg);
+    filter: drop-shadow(10px 60px 20px rgba(0, 0, 0, 0.3)) ;
+
+    animation-name: animation2;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+
+    transition: 800ms ease;
+}
+
+.prod2{
+    position: absolute;
+    top: 70px;
+    left: 140px;
+    width: 140px;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    opacity: 0;
+    transform: scale(1.2);
+    transition: opacity 1s ease;
+}
+.pic2:hover{
+    transform: scale(1.2);  
+}
+
+.prod2price{
+    position: absolute;
+    top: 100px;
+    left: 145px;
+    width: 130px;
+    font-family: 'CustomFont';
+    color: #285430;
+    font-size: 13px;
+
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+.prod2desc{
+    position: absolute;
+    top: 85px;
+    left: 175px;
+    width: 130px;
+    font-family: 'CustomFont';
+    color: #285430;
+    font-size: 9px;
+
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.pic2:hover .prod2{
+    transform: scale(1.2);
+    opacity: 1;
+
+    animation-name: sampleAni11;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    
+}
+
+.pic2:hover .prod2desc{
+    opacity: 1;
+
+    animation-name: sampleAni22;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+
+    
+}
+
+.pic2:hover .prod2price{
+    opacity: 1;
+
+    animation-name: sampleAni22;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    
+}
+
+
+@keyframes sampleAni11{
+    from{
+        position: absolute;
+        left: 90px;
+    }
+    to{
+        position: absolute;
+        left: 140px;
+    }
+}
+
+@keyframes sampleAni22{
+    from{
+        position: absolute;
+        left: 95px;
+    }
+    to{
+        position: absolute;
+        left: 145px;
+    }
+}
+
+
+
+
+
+.pic3{
+    position: absolute;
+    top: 390px;
+    left: 810px;
+    transform: rotate(15deg);
+    filter: drop-shadow(10px 60px 20px rgba(0, 0, 0, 0.3)) ;
+
+    animation-name: animation3;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+
+    transition: 400ms ease-in-out;
+}
+
+.prod3{
+    position: absolute;
+    top:200px;
+    left: -80px;
+    line-height:13px;
+    opacity: 0;
+
+    transition: opacity 0.8s ease;
+}
+
+.prod3price{
+    position: absolute;
+    top: 230px;
+    left: -80px;
+    font-family: 'CustomFont';
+    color: #285430;
+    opacity: 0;
+
+    transition: opacity 0.8s ease;
+}
+
+
+.pic3:hover{
+    transform: scale(1.3);
+}
+
+
+.pic3:hover .prod3{
+    opacity: 1;
+
+    animation-name: sampleAni3;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+
+.pic3:hover .prod3price{
+    opacity: 1;
+
+    animation-name: sampleAni3;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+
+@keyframes sampleAni3{
+    from{
+        position: absolute;
+        left: -20px;
+    }
+    to{
+        position: absolute;
+        left: -80px;
+    }
+}
+
+
+
+
+
+
+.pic4{
+    position: relative;
+    display: inline-block;
+}
+
+
+
+.pic4:hover .overlayTxt{
+    opacity: 1;
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mainFollow{
+    position: absolute;
+    top: 710px;
+    left: 15px;
+    font-family: 'CustomFont';
+    text-align: center;
+    color: #493628;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 13px;
+
+    animation-name: mainSocialsAni;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+.mainSocials1{
+    position: absolute;
+    top: 855px;
+    left: 10px;
+
+    animation-name: mainSocialsAni2;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+
+    transition: 400ms ease-in-out;
+}
+
+.mainSocials1:hover{
+    transform: scale(1.3);
+}
+
+.mainSocials2{
+    position: absolute;
+    top: 885px;
+    left: 7px;
+
+    animation-name: mainSocialsAni3;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+
+    transition: 400ms ease-in-out;
+}
+
+.mainSocials2:hover{
+    transform: scale(1.3);
+}
+
+
+/* KeyFrames */
+@keyframes backgroundAnimation{
+    0%{
+        transform: scale(1.2);
+    }
+    50%,100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes mainSocialsAni {
+    from{
+        position: absolute;
+        left: -10px;
+        opacity: 0;
+    }
+    to{
+        position: absolute;
+        left: 15px;
+        opacity: 1;
+    }
+
+}
+
+@keyframes mainSocialsAni2 {
+    from{
+        position: absolute;
+        left: -10px;
+        opacity: 0;
+    }
+    to{
+        position: absolute;
+        left: 10px;
+    }
+
+}
+
+@keyframes mainSocialsAni3 {
+    from{
+        position: absolute;
+        left: -10px;
+        opacity: 0;
+    }
+    to{
+        position: absolute;
+        left: 7px;
+    }
+
+}
+
+/* Transitions */
+@keyframes animation1 {
+    from{
+        transform: rotate(-65deg);
+        left: 0px;
+        transform: scale(1.2);
+        opacity: 0.2;
+    }
+
+    to{
+        transform: scale(1);
+        top: 350px;
+        left: 70px;
+        transform: rotate(-25deg);
+        opacity: 1;
+    }
+}
+
+
+@keyframes animation2 {
+    from{
+        transform: rotate(45deg);
+        left: 1010px;
+        transform: scale(1.5);
+        opacity: 0.2;
+    }
+
+    to{
+        transform: scale(1);
+        top: 170px;
+        left: 980px;
+        transform: rotate(20deg);
+        opacity: 1;
+    }
+}
+
+
+@keyframes animation3 {
+    from{
+        transform: rotate(0deg);
+        left: 870px;
+        transform: scale(1.5);
+        opacity: 0.2;
+    }
+
+    to{
+        transform: scale(1);
+        top: 390px;
+        left: 810px;
+        transform: rotate(15deg);
+        opacity: 1;
+    }
+}
+
+
+/* Imported Fonts */
+@font-face {
+    font-family: 'CustomFont';
+    src: url(NeueMontreal-Medium.otf);
+}
+
+@font-face {
+    font-family: 'LightFont';
+    src: url(NeueMontreal-Regular.otf);
+}
+
+@font-face {
+    font-family: 'mainFont';
+    src: url(Akira\ Expanded\ Demo.otf);
+}
+
+.white{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: wheat;
+
+    opacity: 1;
+
+}
+
+/* popup */
+.popup{
+    position: absolute;
+    left: 25%;
+    top: 15%;
+    width: 900px;
+    height: 600px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    opacity: 0;
+    transform: scale(0);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+
+    transition: 400ms ease-in-out;
+}
+
+.loginpic1{
+    position: absolute;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    top: 10px;
+    left: 10px;
+}
+
+.loginSideMaintxt{
+    position: absolute;
+    top: 180px;
+    left: 70px;
+    font-family: 'CustomFont';
+    color:white;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.loginTxtSub{
+    position:absolute;
+    top: 265px;
+    left: 125px;
+    font-family: 'LightFont';
+    color: white;
+    letter-spacing: 0.3px;
+    text-align: center;
+}
+
+.signupBttnmain{
+    position: absolute;
+    top: 400px;
+    left: 190px;
+    text-decoration: none;
+    font-family: 'CustomFont';
+    color: white;
+    font-size: 14px;
+    z-index: 1;
+
+}
+
+.signupBttnmain::after{
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -12px;
+    background-color: #285430;
+    width: 70px;
+    height: 30px;
+    border-radius: 20px;
+    
+
+    z-index: -1;
+}
+
+.addtxt1{
+    position: absolute;
+    top: 380px;
+    left: 155px;
+    font-size: 10px;
+    letter-spacing: 0.7px;
+    color: white;
+    font-family: 'LightFont';
+}
+
+.addtxt2{
+    position: absolute;
+    top: 70px;
+    left: 465px;
+    font-size: 30px;
+    letter-spacing: 0.7px;
+    color: black;
+    font-family: 'CustomFont';
+    font-weight: bold;
+}
+
+
+.addtxt3{
+    position: absolute;
+    top: 130px;
+    left: 465px;
+    font-size: 10px;
+    letter-spacing: 0.7px;
+    color: black;
+    font-family: 'LightFont';
+}
+
+
+.loginwithG{
+    position: absolute;
+    top: 160px;
+    left: 465px;
+    width: 370px;
+    height: 35px;
+    background-color: white;
+    border-radius: 3px;
+
+    cursor: pointer;
+
+}
+
+.loginwithGtxt{
+    position: absolute;
+    top: -2px;
+    left: 150px;
+    color: black;
+    font-family: 'LightFont';
+    font-size: 12px;
+    
+}
+
+.loginwithPic1{
+    position: absolute;
+    top: 5px;
+    left: 120px;
+}
+
+.line{
+    position: absolute;
+    top: 220px;
+    left: 465px;
+    height: 1px;
+    background-color: gray;
+    width: 370px;
+    opacity: 0.6;
+}
+
+.line2{
+    position: absolute;
+    top: 215px;
+    left: 620px;
+    height: 30px;
+    width: 50px;
+    background-color:  #f3f3f3;
+    z-index: 1;
+}
+
+.addtxt4{
+    position: absolute;
+    top: -10px;
+    left: 17px;
+    font-family: 'LightFont';
+    font-size: 10px;
+}
+
+.mainlogologin1{
+    position: absolute;
+    left: 460px;
+    top: 20px;
+
+}
+
+.addtxt5{
+    position: absolute;
+    top: 230px;
+    left: 465px;
+    font-size: 10px;
+    letter-spacing: 0.7px;
+    color: black;
+    font-family: 'LightFont';
+}
+
+.addtxt6{
+    position: absolute;
+    top: 300px;
+    left: 465px;
+    font-size: 10px;
+    letter-spacing: 0.7px;
+    color: black;
+    font-family: 'LightFont';
+}
+
+.LoginField{
+    position: absolute;
+    top: 260px;
+    left: 465px;
+    width:370px;
+    height: 30px;
+    border: none;
+}
+
+.PasswordField{
+    position: absolute;
+    top: 330px;
+    left: 465px;
+    width:370px;
+    height: 30px;
+    border: none;
+}
+.checkbox1{
+    position: absolute;
+    top: 360px;
+    left: 465px;
+    height: 30px;
+    border: none;
+}
+
+.addtxt7{
+    position: absolute;
+    top: 361px;
+    left: 485px;
+    font-size: 10px;
+    letter-spacing: 0.7px;
+    color: black;
+    font-family: 'LightFont';
+}
+
+.addtxt8{
+    position: absolute;
+    top: 361px;
+    left: 750px;
+    font-size: 10px;
+    letter-spacing: 0.7px;
+    color: black;
+    font-family: 'LightFont';
+    text-decoration: underline;
+}
+
+.loginContinue{
+    position: absolute;
+    top: 430px;
+    left: 465px;
+    width: 370px;
+    height: 35px;
+    background-color:  #285430;
+    border-radius: 3px;
+
+}
+
+.addtxt9{
+    position:absolute;
+    left: 43%;
+    top: -10px;
+    font-family: 'CustomFont';
+    color: white;
+}
+.close{
+    position: absolute;
+    left: 840px;
+    top: 20px;
+}
+
+.LoginGuest{
+    position: absolute;
+    top: 500px;
+    left: 635px;
+}
+
+.LoginGuest2{
+    position: absolute;
+    top: 520px;
+    left: 615px;
+    text-decoration: none;
+    color: black;
+    font-family: 'LightFont';
+    font-size: 10px;
+}
+
+.addtxt10{
+    position: absolute;
+    top: 460px;
+    left: 120px;
+    color: white;
+    font-family: 'LightFont';
+    font-weight: lighter;
+    font-size: 11px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    opacity: 0.9;
+}
+
+.addtxt11{
+    position: absolute;
+    top: 490px;
+    left: 180px;
+    color: white;
+    font-family: 'CustomFont';
+    font-size: 11px;
+    text-align: center;
+    letter-spacing: 0.4px;
+}
+.popup.active{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.popup.inactive{
+    opacity: 0;
+    transform: scale(0);
+}
+
+
+
+
+
+
+
+
+
+.loginGoogle{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 350px;
+    height: 500px;
+
+    border-radius: 7px;
+
+    background-color: white;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+    opacity: 0;
+    transform: scale(0);
+
+    transition: 400ms ease;
+}
+
+.loginGoogle.activeGoogle{
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+.googlepic1{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.googletxt1{
+    position: absolute;
+    top: 60px;
+    left: 40px;
+    font-family: 'CustomFont';
+    font-size: 30px;
+
+
+
+}
+
+
+.googletxt2{
+    position: absolute;
+    top: 115px;
+    left: 40px;
+    font-family: 'CustomFont';
+    font-size: 10px;
+
+
+
+}
+
+.googletxt3{
+    position: absolute;
+    top: 150px;
+    left: 40px;
+    font-family: 'CustomFont';
+    font-size: 10px;
+
+
+
+}
+
+.googletxt4{
+    position: absolute;
+    top: 390px;
+    left: 50px;
+    font-family: 'CustomFont';
+    font-size: 13px;
+
+    color: #285430;
+
+    cursor: pointer;
+
+
+
+}
+
+
+.googlebttn1{
+    position: absolute;
+    top: 185px;
+    left: 40px;
+    width: 260px;
+    height: 40px;
+
+    border: none;
+    background-color: #F8F8F8;
+}
+
+.googlebttnpic1{
+    position: absolute;
+    top: 3px;
+    left: 10px;
+
+    clip-path: circle(50%);
+}
+
+
+.googlebttntxt1{
+    position: absolute;
+    top: -7px;
+    left: 52px;
+    font-family: 'CustomFont';
+    font-size: 14px;
+}
+
+
+
+.googlebttntxt2{
+    position: absolute;
+    top: 14px;
+    left: 52px;
+    font-family: 'LightFont';
+    font-size: 7px;
+
+    letter-spacing: 0.9px;
+
+    opacity: 0.5;
+
+}
+
+
+.googlebttntxt3{
+    position: absolute;
+    top: 14px;
+    left: 52px;
+    font-family: 'LightFont';
+    font-size: 7px;
+
+    letter-spacing: 0.9px;
+
+    opacity: 0.5;
+
+}
+
+
+.googlebttn2{
+    position: absolute;
+    top: 410px;
+    left: 230px;
+    height: 30px;
+    width: 70px;
+    font-family: 'CustomFont';
+    font-size: 12px;
+
+    letter-spacing: 0.9px;
+
+    background-color: #285430;
+    border: #285430;
+
+    color: white;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.signupContainer{
+    position: absolute;
+    left: 25%;
+    top: 15%;
+    width: 900px;
+    height: 600px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+
+    opacity: 0;
+    transform: scale(0);
+
+    transition: 400ms ease;
+
+}
+.signupContainer.active3{
+    opacity: 1;
+    transform: scale(1);
+}
+.signupContainer.inactive3{
+    opacity: 0;
+    transform: scale(0);
+}
+
+.signupContpic1{
+    position: absolute;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    top: 10px;
+    left: 310px;
+
+    clip: rect(0px 670px 600px 120px);
+
+    border-radius: 10px;
+    
+
+}
+
+
+
+
+.signupContainertxt1{
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    font-size: 32px;
+    font-family: 'CustomFont';
+
+    font-weight: bold;
+}
+
+.signupContBttn1{
+    position: absolute;
+    top: 150px;
+    left: 60px;
+    
+    width: 300px;
+    height: 35px;
+
+    background-color: white;
+    border-radius: 3px;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+
+.signSubtxt1{
+    position: absolute;
+    top: 120px;
+    left: 60px;
+    font-family: 'LightFont';
+    font-size: 11px;
+}
+
+.signinpic1{
+    position: absolute;
+    top: 7px;
+    left: 80px;
+}
+
+.signinaddtxt1{
+    position: absolute;
+    top: 0px;
+    left: 110px;
+    font-family: 'LightFont';
+    font-size: 11px;
+}
+
+
+.signinline1{
+    position: absolute;
+    top: 200px;
+    left: 60px;
+    width: 300px;
+    height: 1px;
+
+    background-color: gray;
+
+    opacity: 0.5;
+}
+
+
+.signinline2{
+    position: absolute;
+    top: 200px;
+    left: 190px;
+    width: 30px;
+    height: 90px;
+
+    background-color: #F3F3F3;
+
+}
+
+
+.signinaddtxt2{
+    position: absolute;
+    top: 180px;
+    left: 198px;
+    font-family: 'LightFont';
+    font-size: 13px;
+}
+
+
+.signinaddtxt3{
+    position: absolute;
+    top: 210px;
+    left: 60px;
+    font-family: 'LightFont';
+    font-size: 10px;
+}
+
+
+.signinadd1{
+    position: absolute;
+    top: 240px;
+    left: 60px;
+    width: 300px;
+    height: 30px;
+
+    border: none;
+
+    border-radius: 3px;
+}
+
+
+.signinaddtxt4{
+    position: absolute;
+    top: 280px;
+    left: 60px;
+    font-family: 'LightFont';
+    font-size: 10px;
+}
+
+
+.signinadd2{
+    position: absolute;
+    top: 310px;
+    left: 60px;
+    width: 300px;
+    height: 30px;
+
+    border: none;
+
+    border-radius: 3px;
+}
+
+.signinaddtxt5{
+    position: absolute;
+    top: 350px;
+    left: 60px;
+    font-family: 'LightFont';
+    font-size: 10px;
+}
+
+
+.signinadd3{
+    position: absolute;
+    top: 380px;
+    left: 60px;
+    width: 300px;
+    height: 30px;
+
+    border: none;
+
+    border-radius: 3px;
+
+}
+
+
+.signinadd4{
+    position: absolute;
+    top: 450px;
+    left: 60px;
+    width: 305px;
+    height: 35px;
+
+    background-color: #285430;
+    border: none;
+
+    border-radius: 3px;
+
+    color: white;
+    font-family: 'CustomFont';
+
+    cursor: pointer;
+    
+}
+
+
+
+.signinadd5{
+    position: absolute;
+    top: 530px;
+    left: 120px;
+
+    font-family: 'LightFont';
+    font-size: 11px;
+
+}
+
+.signinadd5 a{
+    cursor: pointer;
+}
+
+.signinadd6{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    background-color: #F3F3F3;
+    border: none;
+}
+
+
+.signinadd7{
+    position: absolute;
+    top: 34%;
+    left: 57%;
+
+    font-family: 'CustomFont';
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+
+    letter-spacing: 0.3px;
+}
+
+.signinadd8{
+    position: absolute;
+    top: 46%;
+    left: 57.5%;
+
+    font-family: 'LightFont';
+    font-size: 14px;
+    color: white;
+
+    letter-spacing: 0.3px;
+
+    text-align: center;
+}
+
+
+
+.signinCreated{
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    height: 150px;
+    width: 300px;
+    background-color: white;
+    border-radius: 5px;
+
+    z-index: 3;
+
+    box-shadow: rgba(25, 25, 93, 0.25) 0px 25px 50px -20px, rgba(0, 0, 0, 0.3) 0px 30px 30px -30px;
+
+
+    opacity: 0;
+    transform: scale(0);
+    transition: 400ms ease;
+}
+
+.signinCreated.active{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.completedpic{
+    position: absolute;
+    top: 10%;
+    left: 35%;
+}
+
+.completedtxt{
+    position: absolute;
+    top: 45%;
+    left: 12%;
+    font-family: 'CustomFont';
+    font-size: 17px;
+
+    width: 300px;
+}
+
+
+
+
+.googlesignin{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 350px;
+    height: 500px;
+
+    border-radius: 7px;
+
+    background-color: white;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+    opacity: 0;
+    transform: scale(0);
+
+    
+    transition: 400ms ease;
+}   
+
+.googlesignin.activesignin1{
+        opacity: 1;
+        transform: scale(1);
+}   
+
+
+
+.signinBttn1{
+    position: absolute;
+    top: 185px;
+    left: 40px;
+    width: 260px;
+    height: 40px;
+
+    border: none;
+    background-color: #F8F8F8;
+
+    cursor: pointer;
+}
+
+
+.signinBttn2{
+    position: absolute;
+    top: 235px;
+    left: 40px;
+    width: 260px;
+    height: 40px;
+
+    border: none;
+    background-color: #F8F8F8;
+
+    cursor: pointer;
+}
+
+
+.signinBttn3{
+    position: absolute;
+    top: 285px;
+    left: 40px;
+    width: 260px;
+    height: 40px;
+
+    border: none;
+    background-color: #F8F8F8;
+
+    cursor: pointer;
+}
+
+.signinbttnpic1{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+
+    clip-path: circle(50%);
+}
+
+.signinbttntxt1{
+    position: absolute;
+    top: -7px;
+    left: 52px;
+    font-family: 'CustomFont';
+    font-size: 14px;
+}
+
+
+
+.signinbttntxt2{
+    position: absolute;
+    top: 14px;
+    left: 52px;
+    font-family: 'LightFont';
+    font-size: 7px;
+
+    letter-spacing: 0.9px;
+
+    opacity: 0.5;
+
+}
+
+
+.signtxt1{
+    position: absolute;
+    top: 390px;
+    left: 50px;
+    font-family: 'CustomFont';
+    font-size: 13px;
+
+    color: #285430;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* //////////////////////////////////////////////////////////// additional /////////////////////////////////////////////////////// */
+
+.accountMain{
+    width: 80px;
+    height: 35px;
+    position: absolute;
+    left: 110%;
+    top: 70px;
+
+    background-color: none;
+
+    border: 2px solid #285430;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    
+}
+
+
+
+.userbttn{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    width: 25px;
+
+}
+
+.mainAcountCont{
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    height: 200px;
+    width: 250px;
+    background-color: white;
+    z-index: 2;
+    border-radius: 10px;
+
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    
+    transform: scale(0);
+    opacity: 0;
+
+    transition: 300ms ease;
+}
+
+
+.mainAcountCont.active{
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+
+.mainAccountContpic1{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 20%;
+    clip-path: circle(50%);
+
+}
+
+.mainAccTxt1{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    font-family: 'CustomFont';
+    font-size: 13px;
+
+}
+
+.mainAccountContpic2{
+    position: absolute;
+    top: 8%;
+    left: 70%;
+    width: 15%;
+
+}
+
+.mainaccountbttn1{
+    position: absolute;
+    font-size: 17px;
+    top: 70%;
+    left: 33%;
+    font-family: 'CustomFont';
+    background-color: #F8F8F8;
+    color: black;
+    border: none;
+
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+.Confirmation{
+    position: absolute;
+    top: 105%;
+    left: -10%;
+    background-color: white;
+    height: 100px;
+    width: 300px;
+    border-radius: 5px;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+    transform: scale(0);
+    opacity: 0;
+
+    transition: 300ms ease;
+}
+
+.Confirmation.active{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.confirmationtxt1{
+    position: absolute;
+    left: 12%;
+    font-family: 'CustomFont';
+}
+
+.confirmbttn1{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    color: white;
+    font-family: 'CustomFont';
+    font-size: 15px;
+    background-color: #285430;
+    height: 30px;
+
+    border-radius: 5px;
+    border: none;
+
+    cursor: pointer;
+
+}
+
+.confirmbttn2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-family: 'CustomFont';
+    font-size: 15px;
+    background-color: #285430;
+    height: 30px;
+
+    border-radius: 5px;
+    border: none;
+
+    cursor: pointer;
+
+}
+
+.accountExit{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    background-color: white;
+
+    border: none;
+}
